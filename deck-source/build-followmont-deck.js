@@ -46,8 +46,12 @@ function softShadow() {
     fontFace: BODY, fontSize: 17, color: SAGE, margin: 0,
   });
 
-  s.addText("[Your name]  ·  [Unit code]  ·  [Date]", {
-    x: M, y: 6.05, w: 7, h: 0.35,
+  s.addText("Daniel Franco Gomez  ·  [Student number]", {
+    x: M, y: 5.85, w: 8, h: 0.35,
+    fontFace: BODY, fontSize: 14, bold: true, color: "C6BEB8", margin: 0,
+  });
+  s.addText("BSB105 The Future Enterprise  ·  Assignment 1: Oral Critique of AI-generated Content", {
+    x: M, y: 6.25, w: 10.5, h: 0.35,
     fontFace: BODY, fontSize: 13, color: "9A928C", margin: 0,
   });
 
@@ -119,7 +123,7 @@ function softShadow() {
     { n: "55+",    l: "the group at risk" },
   ];
   stats.forEach((st, i) => {
-    const y = 1.95 + i * 1.42;
+    const y = 1.85 + i * 1.28;
     s.addShape(pres.ShapeType.roundRect, {
       x: 7.35, y, w: 5.25, h: 1.12, rectRadius: 0.08,
       fill: { color: i === 2 ? TERRA : PAPER }, line: { color: i === 2 ? TERRA : "E6E0DA", width: 1 },
@@ -135,12 +139,19 @@ function softShadow() {
     });
   });
 
-  s.addText("The question: how do data and technology keep these workers in the job longer?", {
-    x: M, y: 6.15, w: 11.9, h: 0.45,
-    fontFace: BODY, fontSize: 16, italic: true, color: TERRA, margin: 0,
+  s.addShape(pres.ShapeType.roundRect, {
+    x: M, y: 5.72, w: 11.9, h: 1.22, rectRadius: 0.08, fill: { color: SAND },
+  });
+  s.addText("“How might we harness data and technology to improve the workforce participation of transport and logistics workers aged 55 and over?”", {
+    x: M + 0.4, y: 5.9, w: 11.1, h: 0.68,
+    fontFace: BODY, fontSize: 16, italic: true, bold: true, color: "5C4A2E", lineSpacing: 22, margin: 0, valign: "top",
+  });
+  s.addText("Followmont Transport, presentation to QUT, July 2026", {
+    x: M + 0.4, y: 6.55, w: 11.1, h: 0.3,
+    fontFace: BODY, fontSize: 11.5, color: "7C7460", margin: 0,
   });
 
-  s.addNotes("Set up the client quickly. The 55+ card is the whole reason the project exists.");
+  s.addNotes("Read the provocation aloud, word for word. It is the client's wording, not mine — note that it says participation, which is broader than retention.");
 }
 
 // ---- 4. THE CHAIN --------------------------------------------------------
@@ -230,7 +241,7 @@ const prompts = [
     title: "Ask it badly",
     ask: "How might we harness data and technology to improve the workforce participation of transport and logistics workers aged 55 and over?",
     quote: "No context, no constraints, no source demand. That was the point.",
-    got: "Six broad interventions, none tied to a country, an employer or a product. Nothing carried a figure, a date or a source, so there was nothing to check. [Name your six here.]",
+    got: "Six interventions: ergonomic wearables, predictive fatigue management, workforce analytics, knowledge capture, adaptive interfaces and phased retirement. None tied to a country, an employer or a product, and not one figure, date or source to check.",
     craap: [
       { e: "Relevance", f: "Nothing in it is specific to Australia, to road freight, or to Followmont." },
       { e: "Accuracy",  f: "No figures and no sources — the claims cannot be verified either way." },
@@ -243,11 +254,11 @@ const prompts = [
     title: "Add the client",
     ask: "Here is Followmont, and here is the technology they already run — don't propose it again. Pick one technology and aim it at one barrier: the physical load of the job.",
     quote: "“Name something specific enough that I could search for vendors.”  ·  “Where your evidence comes from outside Australia, say so.”",
-    got: "Exoskeletons for manual freight handling — named, costed and argued across evidence, barriers, enablers and business case. Still not one source, and still no Australian regulation.",
+    got: "Exoskeletons for manual freight handling — five commercial vendors named, a price range attached, and the case argued across evidence, barriers, enablers and business case. Still not one source, and still no Australian regulation.",
     craap: [
       { e: "Relevance", f: "The operation is now right; the evidence behind it stayed generic." },
       { e: "Accuracy",  f: "Precise figures appeared — 15–30% muscle activity, A$1,500–5,000 — with nothing behind them." },
-      { e: "Currency",  f: "No publication years offered, despite a post-2022 instruction." },
+      { e: "Purpose",   f: "Five commercial vendors named and none independently verified — it reads like a product recommendation." },
     ],
     notes: "The key move: blocking the tech they already run forces new reasoning. Read the two quoted constraints aloud — they are the reason the answer is checkable at all.",
   },
@@ -380,30 +391,32 @@ prompts.forEach((p) => {
 
   const rows = [
     {
-      c: "Manual handling is the dominant injury burden in this industry",
-      v: "Safe Work Australia, Key WHS Statistics",
+      c: "Manual handling is the dominant injury burden across Australian workplaces",
+      v: "Safe Work Australia, Key WHS Statistics (2025 release)",
       f: "Supported — body stressing was 34.5% of serious claims in 2023–24",
-      ok: true,
+      tone: "ok",
     },
     {
       c: "Exoskeletons cut muscle activity by 15–30%",
-      v: "[The study the AI named — does it exist?]",
-      f: "[Your verdict: lab or field? Australian or overseas?]",
-      ok: false,
+      v: "Peer-reviewed EMG studies, 2021–2025 (Europe, US)",
+      f: "Qualified — the range holds, but every trial is laboratory-based, none Australian, and individual results vary widely",
+      tone: "mixed",
     },
     {
       c: "Units cost A$1,500–5,000",
-      v: "[Vendor pricing pages]",
-      f: "[Your verdict — did any vendor confirm this range?]",
-      ok: false,
+      v: "SpanSet Australia; Exxovantage — the AU suppliers",
+      f: "Not supported — neither publishes a price, and secondary sources put passive units well above A$5,000",
+      tone: "bad",
     },
     {
-      c: "Older workers' participation in transport is falling",
-      v: "[ABS / Jobs and Skills Australia]",
-      f: "[Your verdict against the Lecture 4 data]",
-      ok: false,
+      c: "\u201C55+\u201D is a single workforce group",
+      v: "Jobs and Skills Australia; ABS (Lecture 4)",
+      f: "Contradicted — participation is 69.6% at 55–64 but 16.3% at 65+: one label, two different problems",
+      tone: "bad",
     },
   ];
+
+  const TONE = { ok: "4A6B4A", mixed: "7A6A2B", bad: "9A3F33" };
 
   rows.forEach((r, i) => {
     const y = 2.62 + i * 0.99;
@@ -417,22 +430,22 @@ prompts.forEach((p) => {
     });
     s.addText(r.v, {
       x: colX[1], y: y + 0.06, w: cols[1], h: 0.74,
-      fontFace: BODY, fontSize: 12.5, color: r.ok ? MUTED : FILLIN, italic: !r.ok,
-      lineSpacing: 17, margin: 0, valign: "middle",
+      fontFace: BODY, fontSize: 12, color: MUTED,
+      lineSpacing: 16, margin: 0, valign: "middle",
     });
     s.addText(r.f, {
       x: colX[2], y: y + 0.06, w: cols[2], h: 0.74,
-      fontFace: BODY, fontSize: 12.5, color: r.ok ? "4A6B4A" : FILLIN, italic: !r.ok,
-      bold: r.ok, lineSpacing: 17, margin: 0, valign: "middle",
+      fontFace: BODY, fontSize: 12, color: TONE[r.tone], bold: true,
+      lineSpacing: 16, margin: 0, valign: "middle",
     });
   });
 
-  s.addText("Source: Safe Work Australia, Key Work Health and Safety Statistics Australia (2025 release, 2023–24 data). Remaining rows to be completed with your own checks.", {
+  s.addText("Sources: Safe Work Australia (2025); Jobs and Skills Australia and ABS via BSB105 Lecture 4; SpanSet Australia and Exxovantage product pages; peer-reviewed EMG studies 2021–2025. Full details on the references slide.", {
     x: M, y: 6.72, w: 11.9, h: 0.35,
     fontFace: BODY, fontSize: 10.5, color: MUTED, margin: 0,
   });
 
-  s.addNotes("This is the validation slide — the difference between reporting what the AI said and checking whether it is true. Say out loud which links resolved and which did not.");
+  s.addNotes("This is the validation slide. Land row 3 and row 4 hardest — the price range is not supported by either Australian supplier, and the 55+ block collapses two very different participation rates.");
 }
 
 // ---- 11. CRAAP ON THE FINAL OUTPUT --------------------------------------
@@ -450,10 +463,10 @@ prompts.forEach((p) => {
   });
 
   const els = [
-    { e: "Currency",  f: "The briefing is undated. Its evidence is post-2022 only where I forced the year to be stated — and one study was older than the instruction allowed." },
-    { e: "Relevance", f: "Directly answers the decision in front of the leadership team, at the length they would read. It assumes the depot conditions I supplied; it verified none of them." },
+    { e: "Currency",  f: "The briefing carries no date of its own, and years appeared only where I forced them. The exoskeleton studies I could trace run 2021–2025, straddling the post-2022 line I set." },
+    { e: "Relevance", f: "It assumes the depot conditions I supplied; it verified none of them. It does answer the decision in front of the leadership team, at the length they would read." },
     { e: "Authority", f: "Rests on vendor material and overseas trials. No NHVR, no Safe Work Australia, no Australian regulator appears unless I name one." },
-    { e: "Accuracy",  f: "Roughly half the figures survived the Prompt 4 challenge. The unsupported ones remain, labelled as unsupported, rather than removed." },
+    { e: "Accuracy",  f: "Checked independently, the muscle-activity range broadly holds but the costing does not — no Australian supplier publishes a price in that band. Unsupported figures stayed in, labelled." },
     { e: "Purpose",   f: "Written to persuade a board to fund a trial. That is the real risk in it — a confident register applied to evidence that does not yet earn it." },
   ];
 
@@ -502,31 +515,31 @@ prompts.forEach((p) => {
   ];
   points.forEach((pt, i) => {
     const x = M + i * 4.07;
-    s.addShape(pres.ShapeType.rect, { x, y: 3.05, w: 0.55, h: 0.025, fill: { color: TERRA } });
+    s.addShape(pres.ShapeType.rect, { x, y: 2.95, w: 0.55, h: 0.025, fill: { color: TERRA } });
     s.addText(pt.k, {
-      x, y: 3.3, w: 3.7, h: 0.35,
+      x, y: 3.18, w: 3.7, h: 0.35,
       fontFace: HEAD, fontSize: 15.5, bold: true, color: SAGE, margin: 0,
     });
     s.addText(pt.v, {
-      x, y: 3.68, w: 3.7, h: 0.7,
+      x, y: 3.56, w: 3.7, h: 0.7,
       fontFace: BODY, fontSize: 14, color: "CFC7C1", lineSpacing: 20, margin: 0, valign: "top",
     });
   });
 
   s.addShape(pres.ShapeType.roundRect, {
-    x: M, y: 4.6, w: 11.9, h: 2.15, rectRadius: 0.08, fill: { color: TERRA },
+    x: M, y: 4.45, w: 11.9, h: 2.4, rectRadius: 0.08, fill: { color: TERRA },
   });
   s.addText("RECOMMENDATION TO FOLLOWMONT", {
-    x: M + 0.45, y: 4.82, w: 11, h: 0.3,
+    x: M + 0.45, y: 4.68, w: 11, h: 0.3,
     fontFace: BODY, fontSize: 11.5, bold: true, color: "F6DED9", charSpacing: 2, margin: 0,
   });
   s.addText("Proceed — but to a measured trial, not a rollout.", {
-    x: M + 0.45, y: 5.16, w: 11, h: 0.45,
+    x: M + 0.45, y: 5.02, w: 11, h: 0.45,
     fontFace: HEAD, fontSize: 24, bold: true, color: WHITE, margin: 0,
   });
-  s.addText("The barrier the AI identified is real and independently confirmed. The technology it recommended is not yet proven for Australian road freight — the evidence is thin, largely from overseas laboratories, and partly unsourced. One depot, measures agreed before the start, and a go/no-go decision at six months turns an unproven recommendation into something Followmont can actually test.", {
-    x: M + 0.45, y: 5.68, w: 11, h: 0.95,
-    fontFace: BODY, fontSize: 14, color: "FCEFEC", lineSpacing: 20, margin: 0, valign: "top",
+  s.addText("The barrier is real and independently confirmed. The technology is not yet proven for Australian road freight — laboratory evidence from overseas, and a price range no Australian supplier supports. Trial it at one depot for six months against two measures baselined before the start: body-stressing claims and time-loss days. That turns an unproven recommendation into something Followmont can actually test.", {
+    x: M + 0.45, y: 5.56, w: 11, h: 1.2,
+    fontFace: BODY, fontSize: 13.5, color: "FCEFEC", lineSpacing: 19, margin: 0, valign: "top",
   });
 
   s.addNotes("This answers the assignment's actual question: can Followmont move ahead? Yes — conditionally, and the conditions come from the CRAAP findings.");
@@ -543,28 +556,30 @@ prompts.forEach((p) => {
   });
 
   const refs = [
-    { t: "CRAAP test framework", d: "EdResearch (2022). [Complete reference — Tutorial 3 reading.]" },
-    { t: "Injury and claims data", d: "Safe Work Australia. Key Work Health and Safety Statistics Australia. [Year, URL.]" },
-    { t: "Workforce and participation data", d: "[ABS / Jobs and Skills Australia — dataset, year, URL.]" },
-    { t: "Sources returned by the AI", d: "[Studies and vendor pages cited in Prompt 4 — author, year, URL, and whether the link resolved.]" },
-    { t: "Prompt-design guidance", d: "[Vendor documentation the AI relied on in Prompt 1.]" },
+    { t: "CRAAP test", d: "EdResearch (2022). [Complete reference — BSB105 Tutorial 3 reading.]" },
+    { t: "Injury and claims data", d: "Safe Work Australia (2025). Key Work Health and Safety Statistics Australia. [URL, accessed date.]" },
+    { t: "Workforce participation", d: "Jobs and Skills Australia; Australian Bureau of Statistics. [Dataset, year, URL — as cited in Lecture 4.]" },
+    { t: "Client provocation", d: "Followmont Transport (July 2026). Presentation to Queensland University of Technology." },
+    { t: "Vendor sources", d: "SpanSet Australia, OmniSuit; Exxovantage, back exoskeletons. [URLs, accessed date.]" },
+    { t: "Exoskeleton evidence", d: "[EMG studies traced from the Prompt 4 output — author, year, journal, URL, and whether the link resolved.]" },
+    { t: "GenAI acknowledgement", d: "[Tool and version] used to generate all AI content in a single conversation, [date]. Full transcript submitted with this assessment." },
   ];
 
   refs.forEach((r, i) => {
-    const y = 1.85 + i * 0.95;
+    const y = 1.72 + i * 0.76;
     s.addText(r.t, {
-      x: M, y, w: 3.9, h: 0.4,
-      fontFace: HEAD, fontSize: 16, bold: true, color: TERRA, margin: 0, valign: "top",
+      x: M, y, w: 3.4, h: 0.35,
+      fontFace: HEAD, fontSize: 14.5, bold: true, color: TERRA, margin: 0, valign: "top",
     });
     s.addText(r.d, {
-      x: M + 4.0, y, w: 7.9, h: 0.75,
-      fontFace: BODY, fontSize: 14, color: INK, lineSpacing: 19, margin: 0, valign: "top",
+      x: M + 3.5, y, w: 8.4, h: 0.62,
+      fontFace: BODY, fontSize: 12.5, color: INK, lineSpacing: 17, margin: 0, valign: "top",
     });
   });
 
-  s.addText("All AI-generated content was produced in a single conversation and is quoted or summarised on the prompt slides above.", {
-    x: M, y: 6.75, w: 11.9, h: 0.35,
-    fontFace: BODY, fontSize: 11.5, italic: true, color: MUTED, margin: 0,
+  s.addText("Square brackets mark the details to complete before recording.", {
+    x: M, y: 7.02, w: 11.9, h: 0.3,
+    fontFace: BODY, fontSize: 11, italic: true, color: MUTED, margin: 0,
   });
 
   s.addNotes("Do not read this slide aloud. Leave it on screen while you close.");
