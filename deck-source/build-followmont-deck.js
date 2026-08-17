@@ -5,16 +5,17 @@ pres.layout = "LAYOUT_WIDE"; // 13.3 x 7.5
 pres.author = "Business Assessment";
 pres.title = "Five Prompts, One Client Problem";
 
-// ---- palette -------------------------------------------------------------
-const DARK  = "2E2A28"; // deep charcoal-brown  (title + closing)
-const TERRA = "B85042"; // terracotta           (accent / numerals)
-const SAND  = "E7E8D1"; // sand                 (result cards)
-const SAGE  = "A7BEAE"; // sage                 (quiet accent)
-const PAPER = "F4F1EE"; // warm off-white       (ask cards)
-const INK   = "2E2A28";
-const MUTED = "7A736E";
-const WHITE = "FFFFFF";
-const FILLIN = "9A5F58"; // marks text the student completes
+// ---- palette (Followmont navy + white) ----------------------------------
+const DARK   = "0E2338"; // deep navy            (title + conclusion grounds)
+const TERRA  = "1D5C9B"; // brand blue           (accent / numerals, on light)
+const LIGHTA = "5B9BD5"; // bright blue          (accent on dark grounds)
+const SAND   = "DCE6F0"; // pale blue            (result cards)
+const SAGE   = "A9C4DC"; // ice blue             (quiet accent on dark)
+const PAPER  = "F2F5F8"; // cool off-white       (ask cards)
+const INK    = "16212E";
+const MUTED  = "6B7787";
+const WHITE  = "FFFFFF";
+const FILLIN = "9A5F58"; // retained for legacy references
 
 const HEAD = "Cambria";
 const BODY = "Calibri";
@@ -33,7 +34,7 @@ function softShadow() {
 
   s.addText("GENAI PROMPT CHAIN & CRAAP EVALUATION", {
     x: M, y: 1.75, w: 9, h: 0.3,
-    fontFace: BODY, fontSize: 13, bold: true, color: TERRA, charSpacing: 2.5, margin: 0,
+    fontFace: BODY, fontSize: 13, bold: true, color: LIGHTA, charSpacing: 2.5, margin: 0,
   });
 
   s.addText("Five Prompts,\nOne Client Problem", {
@@ -48,11 +49,11 @@ function softShadow() {
 
   s.addText("Daniel Franco Gomez  ·  n12854468", {
     x: M, y: 5.85, w: 8, h: 0.35,
-    fontFace: BODY, fontSize: 14, bold: true, color: "C6BEB8", margin: 0,
+    fontFace: BODY, fontSize: 14, bold: true, color: "B9C6D4", margin: 0,
   });
   s.addText("BSB105 The Future Enterprise  ·  Assignment 1: Oral Critique of AI-generated Content", {
     x: M, y: 6.25, w: 10.5, h: 0.35,
-    fontFace: BODY, fontSize: 13, color: "9A928C", margin: 0,
+    fontFace: BODY, fontSize: 13, color: "8496A8", margin: 0,
   });
 
   s.addNotes("Open here. One sentence on what the assessment asked for, then move on.");
@@ -126,7 +127,7 @@ function softShadow() {
     const y = 1.85 + i * 1.28;
     s.addShape(pres.ShapeType.roundRect, {
       x: 7.35, y, w: 5.25, h: 1.12, rectRadius: 0.08,
-      fill: { color: i === 2 ? TERRA : PAPER }, line: { color: i === 2 ? TERRA : "E6E0DA", width: 1 },
+      fill: { color: i === 2 ? TERRA : PAPER }, line: { color: i === 2 ? TERRA : "E1E8EF", width: 1 },
       shadow: softShadow(),
     });
     s.addText(st.n, {
@@ -144,11 +145,11 @@ function softShadow() {
   });
   s.addText("“How might we harness data and technology to improve the workforce participation of transport and logistics workers aged 55 and over?”", {
     x: M + 0.4, y: 5.9, w: 11.1, h: 0.68,
-    fontFace: BODY, fontSize: 16, italic: true, bold: true, color: "5C4A2E", lineSpacing: 22, margin: 0, valign: "top",
+    fontFace: BODY, fontSize: 16, italic: true, bold: true, color: "1C3D5C", lineSpacing: 22, margin: 0, valign: "top",
   });
   s.addText("Followmont Transport, presentation to QUT, July 2026", {
     x: M + 0.4, y: 6.55, w: 11.1, h: 0.3,
-    fontFace: BODY, fontSize: 11.5, color: "7C7460", margin: 0,
+    fontFace: BODY, fontSize: 11.5, color: "5A748E", margin: 0,
   });
 
   s.addNotes("Read the provocation aloud, word for word. It is the client's wording, not mine — note that it says participation, which is broader than retention.");
@@ -186,7 +187,7 @@ function softShadow() {
     if (i < steps.length - 1) {
       s.addShape(pres.ShapeType.rect, {
         x: x + cw * 0.5 + 0.42, y: 3.16, w: cw + gap - 0.84, h: 0.02,
-        fill: { color: "DDD6D0" },
+        fill: { color: "D2DDE7" },
       });
     }
 
@@ -308,7 +309,7 @@ prompts.forEach((p) => {
   // --- what I asked
   s.addShape(pres.ShapeType.roundRect, {
     x: M, y: cardY, w: cardW, h: cardH, rectRadius: 0.08,
-    fill: { color: PAPER }, line: { color: "E6E0DA", width: 1 }, shadow: softShadow(),
+    fill: { color: PAPER }, line: { color: "E1E8EF", width: 1 }, shadow: softShadow(),
   });
   s.addText("WHAT I ASKED", {
     x: M + 0.38, y: cardY + 0.28, w: cardW - 0.76, h: 0.28,
@@ -328,11 +329,11 @@ prompts.forEach((p) => {
   const rx = M + cardW + 0.4;
   s.addShape(pres.ShapeType.roundRect, {
     x: rx, y: cardY, w: cardW, h: cardH, rectRadius: 0.08,
-    fill: { color: SAND }, line: { color: "D8DAC0", width: 1 }, shadow: softShadow(),
+    fill: { color: SAND }, line: { color: "C3D3E3", width: 1 }, shadow: softShadow(),
   });
   s.addText("WHAT CAME BACK", {
     x: rx + 0.38, y: cardY + 0.28, w: cardW - 0.76, h: 0.28,
-    fontFace: BODY, fontSize: 11.5, bold: true, color: "6E7A5E", charSpacing: 2, margin: 0,
+    fontFace: BODY, fontSize: 11.5, bold: true, color: "3E6488", charSpacing: 2, margin: 0,
   });
   s.addText(p.got, {
     x: rx + 0.38, y: cardY + 0.65, w: cardW - 0.76, h: 2.05,
@@ -350,7 +351,7 @@ prompts.forEach((p) => {
     const x = M + i * (chipW + 0.28);
     s.addShape(pres.ShapeType.roundRect, {
       x, y: 5.25, w: chipW, h: 1.4, rectRadius: 0.07,
-      fill: { color: "FAF8F6" }, line: { color: "E0D6D2", width: 1 },
+      fill: { color: "F8FAFC" }, line: { color: "DCE4EC", width: 1 },
     });
     s.addText(c.e, {
       x: x + 0.28, y: 5.42, w: chipW - 0.56, h: 0.32,
@@ -422,7 +423,7 @@ prompts.forEach((p) => {
     const y = 2.62 + i * 0.99;
     s.addShape(pres.ShapeType.roundRect, {
       x: M - 0.15, y, w: 12.2, h: 0.86, rectRadius: 0.06,
-      fill: { color: i % 2 === 0 ? PAPER : "FBF9F8" }, line: { color: "EFE9E5", width: 1 },
+      fill: { color: i % 2 === 0 ? PAPER : "FAFCFE" }, line: { color: "E7EDF3", width: 1 },
     });
     s.addText(r.c, {
       x: colX[0], y: y + 0.06, w: cols[0], h: 0.74,
@@ -474,7 +475,7 @@ prompts.forEach((p) => {
     const y = 1.95 + i * 0.98;
     s.addShape(pres.ShapeType.roundRect, {
       x: M - 0.15, y, w: 12.2, h: 0.86, rectRadius: 0.06,
-      fill: { color: i % 2 === 0 ? PAPER : "FBF9F8" }, line: { color: "EFE9E5", width: 1 },
+      fill: { color: i % 2 === 0 ? PAPER : "FAFCFE" }, line: { color: "E7EDF3", width: 1 },
     });
     s.addText(el.e, {
       x: M + 0.15, y: y + 0.06, w: 2.0, h: 0.74,
@@ -501,7 +502,7 @@ prompts.forEach((p) => {
 
   s.addText("CONCLUSION", {
     x: M, y: 0.75, w: 8, h: 0.3,
-    fontFace: BODY, fontSize: 13, bold: true, color: TERRA, charSpacing: 2.5, margin: 0,
+    fontFace: BODY, fontSize: 13, bold: true, color: LIGHTA, charSpacing: 2.5, margin: 0,
   });
   s.addText("Detail changed how the answer sounded.\nPressure changed what it could prove.", {
     x: M, y: 1.25, w: 11.4, h: 1.5,
@@ -515,23 +516,23 @@ prompts.forEach((p) => {
   ];
   points.forEach((pt, i) => {
     const x = M + i * 4.07;
-    s.addShape(pres.ShapeType.rect, { x, y: 2.95, w: 0.55, h: 0.025, fill: { color: TERRA } });
+    s.addShape(pres.ShapeType.rect, { x, y: 2.95, w: 0.55, h: 0.025, fill: { color: LIGHTA } });
     s.addText(pt.k, {
       x, y: 3.18, w: 3.7, h: 0.35,
       fontFace: HEAD, fontSize: 15.5, bold: true, color: SAGE, margin: 0,
     });
     s.addText(pt.v, {
       x, y: 3.56, w: 3.7, h: 0.7,
-      fontFace: BODY, fontSize: 14, color: "CFC7C1", lineSpacing: 20, margin: 0, valign: "top",
+      fontFace: BODY, fontSize: 14, color: "C3CEDA", lineSpacing: 20, margin: 0, valign: "top",
     });
   });
 
   s.addShape(pres.ShapeType.roundRect, {
-    x: M, y: 4.45, w: 11.9, h: 2.4, rectRadius: 0.08, fill: { color: TERRA },
+    x: M, y: 4.45, w: 11.9, h: 2.4, rectRadius: 0.08, fill: { color: "1F6BAE" },
   });
   s.addText("RECOMMENDATION TO FOLLOWMONT", {
     x: M + 0.45, y: 4.68, w: 11, h: 0.3,
-    fontFace: BODY, fontSize: 11.5, bold: true, color: "F6DED9", charSpacing: 2, margin: 0,
+    fontFace: BODY, fontSize: 11.5, bold: true, color: "D6E4F2", charSpacing: 2, margin: 0,
   });
   s.addText("Proceed — but to a measured trial, not a rollout.", {
     x: M + 0.45, y: 5.02, w: 11, h: 0.45,
@@ -539,7 +540,7 @@ prompts.forEach((p) => {
   });
   s.addText("The barrier is real and independently confirmed. The technology is not yet proven for Australian road freight — laboratory evidence from overseas, and a price range no Australian supplier supports. Trial it at one depot for six months against two measures baselined before the start: body-stressing claims and time-loss days. That turns an unproven recommendation into something Followmont can actually test.", {
     x: M + 0.45, y: 5.56, w: 11, h: 1.2,
-    fontFace: BODY, fontSize: 13.5, color: "FCEFEC", lineSpacing: 19, margin: 0, valign: "top",
+    fontFace: BODY, fontSize: 13.5, color: "EAF2F9", lineSpacing: 19, margin: 0, valign: "top",
   });
 
   s.addNotes("This answers the assignment's actual question: can Followmont move ahead? Yes — conditionally, and the conditions come from the CRAAP findings.");
