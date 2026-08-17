@@ -46,7 +46,7 @@ function softShadow() {
     fontFace: BODY, fontSize: 17, color: SAGE, margin: 0,
   });
 
-  s.addText("Daniel Franco Gomez  ·  [Student number]", {
+  s.addText("Daniel Franco Gomez  ·  n12854468", {
     x: M, y: 5.85, w: 8, h: 0.35,
     fontFace: BODY, fontSize: 14, bold: true, color: "C6BEB8", margin: 0,
   });
@@ -398,14 +398,14 @@ prompts.forEach((p) => {
     },
     {
       c: "Exoskeletons cut muscle activity by 15–30%",
-      v: "Peer-reviewed EMG studies, 2021–2025 (Europe, US)",
-      f: "Qualified — the range holds, but every trial is laboratory-based, none Australian, and individual results vary widely",
+      v: "Schwartz et al. (2023), Int. J. Environ. Res. Public Health",
+      f: "Qualified — passive devices cut muscle activity 12–27%, but in a French laboratory, not a depot, and results varied widely between individuals",
       tone: "mixed",
     },
     {
       c: "Units cost A$1,500–5,000",
       v: "SpanSet Australia; Exxovantage — the AU suppliers",
-      f: "Not supported — neither publishes a price, and secondary sources put passive units well above A$5,000",
+      f: "Not supported — neither publishes a unit price; SpanSet quotes only through a rental credited to purchase",
       tone: "bad",
     },
     {
@@ -440,7 +440,7 @@ prompts.forEach((p) => {
     });
   });
 
-  s.addText("Sources: Safe Work Australia (2025); Jobs and Skills Australia and ABS via BSB105 Lecture 4; SpanSet Australia and Exxovantage product pages; peer-reviewed EMG studies 2021–2025. Full details on the references slide.", {
+  s.addText("Sources: Safe Work Australia (2025); Jobs and Skills Australia and ABS via BSB105 Lecture 4; SpanSet Australia and Exxovantage product pages; Schwartz et al. (2023). Full details on the references slide.", {
     x: M, y: 6.72, w: 11.9, h: 0.35,
     fontFace: BODY, fontSize: 10.5, color: MUTED, margin: 0,
   });
@@ -556,33 +556,46 @@ prompts.forEach((p) => {
   });
 
   const refs = [
-    { t: "CRAAP test", d: "EdResearch (2022). [Complete reference — BSB105 Tutorial 3 reading.]" },
-    { t: "Injury and claims data", d: "Safe Work Australia (2025). Key Work Health and Safety Statistics Australia. [URL, accessed date.]" },
-    { t: "Workforce participation", d: "Jobs and Skills Australia; Australian Bureau of Statistics. [Dataset, year, URL — as cited in Lecture 4.]" },
-    { t: "Client provocation", d: "Followmont Transport (July 2026). Presentation to Queensland University of Technology." },
-    { t: "Vendor sources", d: "SpanSet Australia, OmniSuit; Exxovantage, back exoskeletons. [URLs, accessed date.]" },
-    { t: "Exoskeleton evidence", d: "[EMG studies traced from the Prompt 4 output — author, year, journal, URL, and whether the link resolved.]" },
-    { t: "GenAI acknowledgement", d: "[Tool and version] used to generate all AI content in a single conversation, [date]. Full transcript submitted with this assessment." },
+    { t: "CRAAP test",
+      d: "Australian Education Research Organisation. (2022). Evaluating non-academic sources: The CRAAP test. https://www.edresearch.edu.au/guides-resources/practice-resources/evaluating-non-academic-sources-craap-test" },
+    { t: "Injury and claims data",
+      d: "Safe Work Australia. (2025). Key work health and safety statistics Australia. https://data.safeworkaustralia.gov.au/insights/key-whs-statistics-australia/latest-release" },
+    { t: "Workforce participation",
+      d: "Jobs and Skills Australia & Australian Bureau of Statistics, as cited in BSB105 The Future Enterprise, Lecture 4 (2026). Participation rate 69.6% (55–64); 16.3% (65+)." },
+    { t: "Client provocation",
+      d: "Followmont Transport. (2026, July). Presentation to Queensland University of Technology." },
+    { t: "Vendor sources",
+      d: "SpanSet Australia. OmniSuit exoskeleton. https://www.spanset.com/au-en/products/omnisuit-33654 · Exxovantage. Back exoskeletons. https://www.exxovantage.com/back-exoskeletons" },
+    { t: "Exoskeleton evidence",
+      d: "Schwartz, M., Desbrosses, K., Theurel, J., & Mornieux, G. (2023). Biomechanical consequences of using passive and active back-support exoskeletons during different manual handling tasks. International Journal of Environmental Research and Public Health, 20(15), 6468. https://doi.org/10.3390/ijerph20156468" },
+    { t: "GenAI acknowledgement",
+      d: "Claude (Anthropic) was used to generate all AI content analysed here, in a single conversation, August 2026. Full transcript retained and available on request." },
   ];
 
-  refs.forEach((r, i) => {
-    const y = 1.72 + i * 0.76;
-    s.addText(r.t, {
-      x: M, y, w: 3.4, h: 0.35,
-      fontFace: HEAD, fontSize: 14.5, bold: true, color: TERRA, margin: 0, valign: "top",
-    });
-    s.addText(r.d, {
-      x: M + 3.5, y, w: 8.4, h: 0.62,
-      fontFace: BODY, fontSize: 12.5, color: INK, lineSpacing: 17, margin: 0, valign: "top",
-    });
+  let ry = 1.72;
+  refs.forEach((r) => {
+    const chars = r.t.length + 3 + r.d.length;
+    const lines = Math.max(1, Math.ceil(chars / 150));
+    const h = lines * 0.245 + 0.06;
+    s.addText(
+      [
+        { text: r.t + " — ", options: { bold: true, color: TERRA } },
+        { text: r.d,         options: { color: INK } },
+      ],
+      {
+        x: M, y: ry, w: 11.9, h,
+        fontFace: BODY, fontSize: 11.5, lineSpacing: 16, margin: 0, valign: "top",
+      }
+    );
+    ry += h + 0.2;
   });
 
-  s.addText("Square brackets mark the details to complete before recording.", {
-    x: M, y: 7.02, w: 11.9, h: 0.3,
+  s.addText("All URLs accessed 17 August 2026.", {
+    x: M, y: 6.95, w: 11.9, h: 0.3,
     fontFace: BODY, fontSize: 11, italic: true, color: MUTED, margin: 0,
   });
 
-  s.addNotes("Do not read this slide aloud. Leave it on screen while you close.");
+  s.addNotes("Do not read this slide aloud. Leave it on screen while you close. If asked, the AI transcript is retained and can be provided.");
 }
 
 pres.writeFile({ fileName: "Followmont-Prompt-Chain.pptx" }).then(() => console.log("written"));
