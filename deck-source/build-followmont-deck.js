@@ -73,7 +73,7 @@ function softShadow() {
     { n: "1", t: "Purpose",    d: "The client, the problem, and what I set out to test" },
     { n: "2", t: "Prompts",    d: "A chain of five, each building on the answer before it" },
     { n: "3", t: "CRAAP",      d: "Currency, Relevance, Authority, Accuracy, Purpose — applied at every step" },
-    { n: "4", t: "Conclusion", d: "What I validated independently, and what I recommend to Followmont" },
+    { n: "4", t: "Conclusion", d: "What I checked myself, and what I recommend to Followmont" },
   ];
 
   items.forEach((it, i) => {
@@ -111,7 +111,7 @@ function softShadow() {
   });
 
   s.addText(
-    "Followmont Transport is a family-owned Australian road freight operator running line-haul and local delivery across regional Queensland and northern New South Wales.\n\nIts drivers and dock staff are ageing. The physical side of the job — lifting freight, climbing in and out of the cab — pushes experienced people out of operational roles before they would otherwise choose to leave.",
+    "Followmont Transport is a family-owned Australian road freight operator running line-haul and local delivery across regional Queensland and northern New South Wales.\n\nIts drivers and dock staff are ageing. The physical side of the job — lifting freight, climbing in and out of the cab — pushes experienced people out of the job before they're ready to go.",
     {
       x: M, y: 2.0, w: 6.0, h: 3.6,
       fontFace: BODY, fontSize: 17, color: INK, lineSpacing: 27, margin: 0, valign: "top",
@@ -214,7 +214,7 @@ function softShadow() {
   s.addShape(pres.ShapeType.roundRect, {
     x: M, y: 5.85, w: 11.9, h: 0.9, rectRadius: 0.08, fill: { color: SAND },
   });
-  s.addText("The point of the chain is the gap between the steps — what changes when you add detail, and what only changes when you ask for evidence.", {
+  s.addText("What matters is what changed between steps — what detail fixed, and what only pressure fixed.", {
     x: M + 0.4, y: 5.85, w: 11.1, h: 0.9,
     fontFace: BODY, fontSize: 15.5, color: INK, valign: "middle", margin: 0,
   });
@@ -229,11 +229,11 @@ const prompts = [
     title: "Set the method",
     ask: "Before the client problem: what makes a prompt well designed, what do you do badly when I ask for research with citations, and how should I sequence prompts so each builds on the last?",
     quote: "“Where your answer draws on vendor documentation or on your own general behaviour rather than independent research, say so explicitly.”",
-    got: "A usable method, and one admission worth keeping: it can produce citations that look right and aren't. Most of what it offered came from vendor prompt-engineering guides and from describing its own behaviour.",
+    got: "A usable method, and one useful admission: it can produce citations that look right and aren't. Most of its advice came from vendor guides and from describing itself.",
     craap: [
-      { e: "Authority", f: "Leans on vendor documentation and self-description, not independent research." },
-      { e: "Purpose",   f: "Vendor guides exist to promote the tool — useful, but not neutral." },
-      { e: "Currency",  f: "Prompt-design guidance shifts with every model release; undated advice ages fast." },
+      { e: "Authority", f: "Based on vendor guides and its own self-description — not independent research." },
+      { e: "Purpose",   f: "Vendor guides exist to sell the tool. Useful, but not neutral." },
+      { e: "Currency",  f: "Advice about prompting changes with every new model. Undated advice goes stale fast." },
     ],
     notes: "Explain why the first prompt is not about the client at all. The forced disclosure in the quote is what makes the Authority finding possible.",
   },
@@ -242,11 +242,11 @@ const prompts = [
     title: "Ask it badly",
     ask: "How might we harness data and technology to improve the workforce participation of transport and logistics workers aged 55 and over?",
     quote: "No context, no constraints, no source demand. That was the point.",
-    got: "Six interventions: ergonomic wearables, predictive fatigue management, workforce analytics, knowledge capture, adaptive interfaces and phased retirement. None tied to a country, an employer or a product, and not one figure, date or source to check.",
+    got: "Six interventions: ergonomic wearables, predictive fatigue management, workforce analytics, knowledge capture, adaptive interfaces and phased retirement. None tied to a country, a company or a product, and not one figure, date or source to check.",
     craap: [
       { e: "Relevance", f: "Nothing in it is specific to Australia, to road freight, or to Followmont." },
-      { e: "Accuracy",  f: "No figures and no sources — the claims cannot be verified either way." },
-      { e: "Currency",  f: "Undated throughout; the same list would read the same in 2015." },
+      { e: "Accuracy",  f: "No figures and no sources. There's nothing to check." },
+      { e: "Currency",  f: "No dates anywhere. The same list would have read the same in 2015." },
     ],
     notes: "Stress that this was deliberate. It is the control, not a mistake — without it there is nothing to compare Prompt 3 against.",
   },
@@ -255,11 +255,11 @@ const prompts = [
     title: "Add the client",
     ask: "Here is Followmont, and here is the technology they already run — don't propose it again. Pick one technology and aim it at one barrier: the physical load of the job.",
     quote: "“Name something specific enough that I could search for vendors.”  ·  “Where your evidence comes from outside Australia, say so.”",
-    got: "Exoskeletons for manual freight handling — five commercial vendors named, a price range attached, and the case argued across evidence, barriers, enablers and business case. Still not one source, and still no Australian regulation.",
+    got: "Exoskeletons for manual freight handling — five commercial vendors named, a price range attached, and a full case covering evidence, barriers, enablers and cost. Still not one source, and still no Australian regulation.",
     craap: [
-      { e: "Relevance", f: "The operation is now right; the evidence behind it stayed generic." },
-      { e: "Accuracy",  f: "Precise figures appeared — 15–30% muscle activity, A$1,500–5,000 — with nothing behind them." },
-      { e: "Purpose",   f: "Five commercial vendors named and none independently verified — it reads like a product recommendation." },
+      { e: "Relevance", f: "It got the company right. The evidence stayed generic." },
+      { e: "Accuracy",  f: "Exact figures appeared — 15–30% muscle activity, A$1,500–5,000 — with nothing behind them." },
+      { e: "Purpose",   f: "Five vendors named, none checked. It reads like a product recommendation." },
     ],
     notes: "The key move: blocking the tech they already run forces new reasoning. Read the two quoted constraints aloud — they are the reason the answer is checkable at all.",
   },
@@ -268,11 +268,11 @@ const prompts = [
     title: "Ask for receipts",
     ask: "Give me a source for every number you just used — the 15–30% reduction, the price range, the trial results. And why didn't you mention Australian regulation once?",
     quote: "“If you can't find a source for something, just say so. Don't give me a source that's close enough.”",
-    got: "Some claims came back with a study and a year attached. Others came back with an admission that no source existed. It also conceded it had ignored the Australian regulatory setting entirely.",
+    got: "Some claims came back with a study and a year attached. Others came back with an admission that no source existed. It also admitted it had ignored Australian regulation completely.",
     craap: [
-      { e: "Accuracy",  f: "Sourcing only appeared under pressure; some numbers could not be supported at all." },
-      { e: "Authority", f: "What did arrive skewed to vendors and overseas studies, not Australian regulators." },
-      { e: "Currency",  f: "Publication years surfaced only once I demanded them explicitly." },
+      { e: "Accuracy",  f: "It only gave sources when I pushed. Some numbers had none at all." },
+      { e: "Authority", f: "The sources it gave were mostly vendors and overseas studies. No Australian regulators." },
+      { e: "Currency",  f: "Years only appeared when I asked for them directly." },
     ],
     notes: "This is the slide that carries the argument. Slow down. The permission to fail — 'just say so' — is what produced the honest answer.",
   },
@@ -281,11 +281,11 @@ const prompts = [
     title: "Make it useful",
     ask: "Pull it together as a one-page briefing for Followmont's leadership: recommendation, cost, risks, and what they would measure.",
     quote: "“Keep the sourcing honest… don't smooth over the gaps you just told me about.”",
-    got: "A one-page briefing a manager could act on — recommendation, indicative cost, risks and a measurement plan — with the weak evidence still labelled weak rather than quietly dropped.",
+    got: "A one-page briefing a manager could act on — recommendation, rough cost, risks and a measurement plan — with the weak evidence still labelled weak, not quietly dropped.",
     craap: [
-      { e: "Purpose",   f: "Written to persuade a board to fund a trial; the tone runs ahead of the evidence." },
-      { e: "Relevance", f: "Fits the decision Followmont actually faces, at the length they would actually read." },
-      { e: "Accuracy",  f: "Gaps stayed visible — but only because I instructed it to keep them." },
+      { e: "Purpose",   f: "Written to sell a trial to a board. It sounds more certain than the evidence allows." },
+      { e: "Relevance", f: "It fits the decision Followmont actually faces, at a length they'd actually read." },
+      { e: "Accuracy",  f: "The gaps stayed in — but only because I told it to." },
     ],
     notes: "Close the chain. Note that honesty had to be requested; it was never volunteered.",
   },
@@ -400,13 +400,13 @@ prompts.forEach((p) => {
     {
       c: "Exoskeletons cut muscle activity by 15–30%",
       v: "Schwartz et al. (2023), Int. J. Environ. Res. Public Health",
-      f: "Qualified — passive devices cut muscle activity 12–27%, but in a French laboratory, not a depot, and results varied widely between individuals",
+      f: "Overstated — passive devices cut muscle activity 12–27%, not 15–30%. French lab, not a depot, and results varied a lot between individuals",
       tone: "mixed",
     },
     {
       c: "Units cost A$1,500–5,000",
       v: "SpanSet Australia; Exxovantage — the AU suppliers",
-      f: "Not supported — neither publishes a unit price; SpanSet quotes only through a rental credited to purchase",
+      f: "Not supported — neither publishes a price. SpanSet only quotes through a rental that credits toward purchase.",
       tone: "bad",
     },
     {
@@ -464,11 +464,11 @@ prompts.forEach((p) => {
   });
 
   const els = [
-    { e: "Currency",  f: "The briefing carries no date of its own, and years appeared only where I forced them. The exoskeleton studies I could trace run 2021–2025, straddling the post-2022 line I set." },
-    { e: "Relevance", f: "It assumes the depot conditions I supplied; it verified none of them. It does answer the decision in front of the leadership team, at the length they would read." },
-    { e: "Authority", f: "Rests on vendor material and overseas trials. No NHVR, no Safe Work Australia, no Australian regulator appears unless I name one." },
-    { e: "Accuracy",  f: "Checked independently, the muscle-activity range broadly holds but the costing does not — no Australian supplier publishes a price in that band. Unsupported figures stayed in, labelled." },
-    { e: "Purpose",   f: "Written to persuade a board to fund a trial. That is the real risk in it — a confident register applied to evidence that does not yet earn it." },
+    { e: "Currency",  f: "The briefing has no date of its own, and years only appeared when I pushed. The one study I could trace is from 2023." },
+    { e: "Relevance", f: "It assumes the depot conditions I supplied; it verified none of them. It does answer the decision the leadership team faces, at a length they'd read." },
+    { e: "Authority", f: "Built on vendor material and overseas trials. No NHVR, no Safe Work Australia — no Australian regulator appears unless I name one." },
+    { e: "Accuracy",  f: "When I checked, the muscle-activity range was overstated — 12–27%, not 15–30%. The costing failed completely: no Australian supplier publishes a price in that band." },
+    { e: "Purpose",   f: "Written to persuade a board to fund a trial. That's the real risk: it sounds certain about evidence that isn't strong enough yet." },
   ];
 
   els.forEach((el, i) => {
@@ -538,7 +538,7 @@ prompts.forEach((p) => {
     x: M + 0.45, y: 5.02, w: 11, h: 0.45,
     fontFace: HEAD, fontSize: 24, bold: true, color: WHITE, margin: 0,
   });
-  s.addText("The barrier is real and independently confirmed. The technology is not yet proven for Australian road freight — laboratory evidence from overseas, and a price range no Australian supplier supports. Trial it at one depot for six months against two measures baselined before the start: body-stressing claims and time-loss days. That turns an unproven recommendation into something Followmont can actually test.", {
+  s.addText("The barrier is real — I confirmed that myself. The technology is not yet proven for Australian road freight — the evidence comes from overseas labs, and no Australian supplier supports the price range. Trial it at one depot for six months against two measures recorded before it starts: body-stressing claims and time-loss days. That turns an unproven recommendation into something Followmont can actually test.", {
     x: M + 0.45, y: 5.56, w: 11, h: 1.2,
     fontFace: BODY, fontSize: 13.5, color: "EAF2F9", lineSpacing: 19, margin: 0, valign: "top",
   });
