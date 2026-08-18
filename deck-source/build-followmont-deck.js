@@ -56,7 +56,7 @@ function softShadow() {
     fontFace: BODY, fontSize: 13, color: "8496A8", margin: 0,
   });
 
-  s.addNotes("Open here. One sentence on what the assessment asked for, then move on.");
+  s.addNotes("[0:00-0:10]  TITLE - identify yourself, then move.\n\n\u201cHi, I'm Daniel Franco Gomez, student number n12854468. This is Assignment 1 for BSB105, The Future Enterprise - an oral critique of AI-generated content, built around a real client problem from Followmont Transport.\u201d\n\nCUE: Do not explain the deck or preview your argument. Name it and go.");
 }
 
 // ---- 2. AGENDA -----------------------------------------------------------
@@ -97,7 +97,7 @@ function softShadow() {
     });
   });
 
-  s.addNotes("Fifteen seconds. Point at item 3 — the CRAAP evaluation runs through every prompt slide, not just at the end.");
+  s.addNotes("[0:10-0:25]  AGENDA - four words, then one flag.\n\n\u201cFour parts. Purpose, prompts, CRAAP, conclusion.\n\nOne thing to flag up front: CRAAP isn't a section at the end. It runs through every single prompt slide - Currency, Relevance, Authority, Accuracy and Purpose, applied at every step of the chain.\u201d\n\nCUE: Gesture at item 3 as you say it. Don't read the four descriptions aloud.");
 }
 
 // ---- 3. THE CLIENT -------------------------------------------------------
@@ -152,7 +152,7 @@ function softShadow() {
     fontFace: BODY, fontSize: 11.5, color: "5A748E", margin: 0,
   });
 
-  s.addNotes("Read the provocation aloud, word for word. It is the client's wording, not mine — note that it says participation, which is broader than retention.");
+  s.addNotes("[0:25-1:25]  CLIENT - one sentence, the provocation verbatim, then the participation point.\n\n\u201cFollowmont Transport is a family-owned Australian road freight operator - around a thousand people, twenty-six depots, line-haul and local delivery across regional Queensland and northern New South Wales.\n\nTheir workforce is ageing, and the physical side of the job - lifting freight, climbing in and out of the cab - pushes experienced people out before they're ready to go.\n\nHere is their provocation, word for word:\n\n'How might we harness data and technology to improve the workforce participation of transport and logistics workers aged fifty-five and over?'\n\nNotice the word participation. That's wider than retention. Retention is keeping the people you already have. Participation also covers who can get in, who can stay, and who can come back. Hold onto that - it becomes one of my findings later, because the AI quietly narrowed it.\u201d\n\nCUE: Slow down for the quote. It is the client's wording, not yours - that's the point.");
 }
 
 // ---- 4. THE CHAIN --------------------------------------------------------
@@ -219,7 +219,7 @@ function softShadow() {
     fontFace: BODY, fontSize: 15.5, color: INK, valign: "middle", margin: 0,
   });
 
-  s.addNotes("This is the map slide. Everything after it is one step of this row.");
+  s.addNotes("[1:25-1:45]  THE CHAIN - this is a map. Do not explain any step yet.\n\n\u201cThis is the map. Five prompts, one conversation, nothing restarted.\n\nSet the method. Ask it badly. Add the client. Ask for receipts. Make it useful.\n\nI'm not going to explain them yet - because the interesting part isn't any single prompt. It's what changed between them.\u201d\n\nCUE: Name the five fast, in rhythm. Resist the urge to elaborate - every step gets its own slide.");
 }
 
 // ---- 5-9. PROMPT SLIDES --------------------------------------------------
@@ -235,7 +235,7 @@ const prompts = [
       { e: "Purpose",   f: "Vendor guides exist to sell the tool. Useful, but not neutral." },
       { e: "Currency",  f: "Advice about prompting changes with every new model. Undated advice goes stale fast." },
     ],
-    notes: "Explain why the first prompt is not about the client at all. The forced disclosure in the quote is what makes the Authority finding possible.",
+    notes: "[1:45-2:25]  PROMPT 01 - why the first prompt isn't about the client. CRAAP point: AUTHORITY.\n\n\u201cPrompt one isn't about Followmont at all. Before I gave it a client, I wanted to know what I was working with - what makes a prompt well designed, what it does badly when I ask for research with citations, and how to sequence prompts so each builds on the last.\n\nThe line that did the work is on screen. I made it disclose where its answer came from. And it told me: most of its advice came from vendor guides, and from describing itself.\n\nThat's my Authority finding. It isn't independent research. It's the companies that sell these tools, plus the tool talking about its own behaviour.\u201d\n\nCUE: Read the blue quote aloud. Say Authority out loud - name the element.",
   },
   {
     n: "02",
@@ -248,7 +248,7 @@ const prompts = [
       { e: "Accuracy",  f: "No figures and no sources. There's nothing to check." },
       { e: "Currency",  f: "No dates anywhere. The same list would have read the same in 2015." },
     ],
-    notes: "Stress that this was deliberate. It is the control, not a mistake — without it there is nothing to compare Prompt 3 against.",
+    notes: "[2:25-3:05]  PROMPT 02 - this was deliberate. It's the control. CRAAP point: RELEVANCE.\n\n\u201cThis one looks lazy. It isn't.\n\nThis is the client's question asked cold - no country, no company, no constraints, no source demand. That was deliberate. This is my control.\n\nSix interventions came back: ergonomic wearables, predictive fatigue management, workforce analytics, knowledge capture, adaptive interfaces, phased retirement.\n\nRelevance: none of it is specific to Australia, to road freight, or to Followmont. It's a perfectly reasonable answer to nobody's question.\n\nBut without this slide I have nothing to compare the next one against.\u201d\n\nCUE: Land 'that was deliberate' clearly - a marker must not read this as a weak prompt.",
   },
   {
     n: "03",
@@ -261,7 +261,7 @@ const prompts = [
       { e: "Accuracy",  f: "Exact figures appeared — 15–30% muscle activity, A$1,500–5,000 — with nothing behind them." },
       { e: "Purpose",   f: "Five vendors named, none checked. It reads like a product recommendation." },
     ],
-    notes: "The key move: blocking the tech they already run forces new reasoning. Read the two quoted constraints aloud — they are the reason the answer is checkable at all.",
+    notes: "[3:05-3:50]  PROMPT 03 - the key move is blocking their existing tech. CRAAP point: ACCURACY.\n\n\u201cNow I give it the real client - and here's the move that matters. I named the technology Followmont already runs and blocked it. It can't recommend what they've already bought, so it has to actually reason about this operation.\n\nTwo constraints, and I'll read them both:\n\n'Name something specific enough that I could search for vendors.'\n\n'Where your evidence comes from outside Australia, say so.'\n\nIt came back with exoskeletons. Five vendors. A price range. A full case.\n\nAccuracy: exact figures - fifteen to thirty percent muscle activity, fifteen hundred to five thousand dollars - with nothing behind them. The detail went up. The evidence didn't.\u201d\n\nCUE: Both quotes aloud, they demonstrate prompt craft. Land the last sentence hard.",
   },
   {
     n: "04",
@@ -274,7 +274,7 @@ const prompts = [
       { e: "Authority", f: "The sources it gave were mostly vendors and overseas studies. No Australian regulators." },
       { e: "Currency",  f: "Years only appeared when I asked for them directly." },
     ],
-    notes: "This is the slide that carries the argument. Slow down. The permission to fail — 'just say so' — is what produced the honest answer.",
+    notes: "[3:50-4:35]  PROMPT 04 - the turn. Permission to fail is what produced honesty. CRAAP point: ACCURACY.\n\n\u201cThis is the turn in the whole chain.\n\nI asked for a source behind every number. And critically, I gave it permission to fail:\n\n'If you can't find a source for something, just say so. Don't give me a source that's close enough.'\n\nThat line is what produced honesty. Some claims came back with a study and a year attached. Others came back with an admission that no source existed at all. And it conceded it had ignored Australian regulation completely.\n\nAccuracy again: it only gave sources when I pushed. Adding detail in prompt three didn't do it. Pressure did.\u201d\n\nCUE: Slowest slide in the deck. This is the argument - give it room.",
   },
   {
     n: "05",
@@ -287,7 +287,7 @@ const prompts = [
       { e: "Relevance", f: "It fits the decision Followmont actually faces, at a length they'd actually read." },
       { e: "Accuracy",  f: "The gaps stayed in — but only because I told it to." },
     ],
-    notes: "Close the chain. Note that honesty had to be requested; it was never volunteered.",
+    notes: "[4:35-5:10]  PROMPT 05 - close the chain. Honesty had to be asked for.\n\n\u201cLast prompt: make it usable. One page for Followmont's leadership - recommendation, rough cost, risks, and what they'd measure.\n\nAnd I told it not to smooth over the gaps it had just admitted to me. It didn't. The weak evidence stayed labelled weak.\n\nBut notice what that means. I had to ask. Across all five prompts, honesty was never volunteered - every single time, it had to be requested.\u201d\n\nCUE: 'I had to ask' is the line. Pause after it before moving on.",
   },
 ];
 
@@ -446,7 +446,7 @@ prompts.forEach((p) => {
     fontFace: BODY, fontSize: 10.5, color: MUTED, margin: 0,
   });
 
-  s.addNotes("This is the validation slide. Land row 3 and row 4 hardest — the price range is not supported by either Australian supplier, and the 55+ block collapses two very different participation rates.");
+  s.addNotes("[5:10-6:10]  CHECKING IT MYSELF - your work, not the AI's. Rows 3 and 4 in full.\n\n\u201cEverything so far is the AI admitting things. That's its work, not mine. So I checked four of its claims myself.\n\nThe first two quickly. Manual handling: confirmed - Safe Work Australia puts body stressing at thirty-four and a half percent of serious claims. The muscle-activity figure: overstated - the study says twelve to twenty-seven percent, not fifteen to thirty, and it's a French laboratory, not a depot.\n\nRow three, the price. Fifteen hundred to five thousand dollars. I checked both Australian suppliers, SpanSet and Exxovantage. Neither publishes a price at all - SpanSet only quotes through a rental that credits toward purchase. So that number isn't just unsourced. It's unsupported.\n\nAnd row four. The AI treated fifty-five plus as one group. The Australian data doesn't. Participation is sixty-nine point six percent at fifty-five to sixty-four - and sixteen point three percent at sixty-five plus. One label. Two completely different problems.\u201d\n\nCUE: This slide is your HD evidence. Rows 1-2 gestured at, 3-4 spoken in full. End on 'two different problems' and stop.");
 }
 
 // ---- 11. CRAAP ON THE FINAL OUTPUT --------------------------------------
@@ -492,7 +492,7 @@ prompts.forEach((p) => {
     fontFace: BODY, fontSize: 10.5, color: MUTED, margin: 0,
   });
 
-  s.addNotes("Tutorial 3 asks for the full five elements on the final output. This is that slide — take it slowly, one element at a time.");
+  s.addNotes("[6:10-7:10]  CRAAP ON THE FINAL BRIEFING - all five named. Slow on Authority and Purpose.\n\n\u201cNow all five elements, applied to the final briefing - the document Followmont would actually read.\n\nCurrency: it has no date of its own, and years only appeared when I pushed. The one study I could trace is from 2023.\n\nRelevance: it assumes the depot conditions I gave it, and verified none of them.\n\nAuthority - this is the important one. It's built on vendor material and overseas trials. No NHVR. No Safe Work Australia. No Australian regulator appears anywhere unless I name it first. For a question about Australian road freight, that's a serious gap.\n\nAccuracy: the muscle-activity range was overstated, and the costing failed completely.\n\nAnd Purpose. This is written to persuade a board to fund a trial. That's the real risk in it - it sounds certain about evidence that isn't strong enough yet. Fluency is not reliability.\u201d\n\nCUE: Name each element before its finding. Slow deliberately on Authority and Purpose.");
 }
 
 // ---- 12. CONCLUSION & RECOMMENDATION ------------------------------------
@@ -543,7 +543,7 @@ prompts.forEach((p) => {
     fontFace: BODY, fontSize: 13.5, color: "EAF2F9", lineSpacing: 19, margin: 0, valign: "top",
   });
 
-  s.addNotes("This answers the assignment's actual question: can Followmont move ahead? Yes — conditionally, and the conditions come from the CRAAP findings.");
+  s.addNotes("[7:10-7:55]  CONCLUSION - the two-line finding, then the recommendation and its conditions.\n\n\u201cSo: detail changed how the answer sounded. Pressure changed what it could prove.\n\nThe generic answer was fluent and unusable. The specific answer was confident and still unsourced. Only the direct challenge separated evidence from filler.\n\nMy recommendation to Followmont: proceed - but to a trial, not a rollout. The barrier is real; I confirmed that myself. The technology isn't proven here - the evidence comes from overseas labs, and no Australian supplier supports the price range.\n\nSo: one depot, six months, and two measures recorded before it starts - body-stressing claims and time-loss days. That turns an unproven recommendation into something Followmont can actually test.\u201d\n\nCUE: This is your last spoken slide. Land the recommendation and the two measures, then stop.");
 }
 
 // ---- 13. REFERENCES ------------------------------------------------------
@@ -596,7 +596,7 @@ prompts.forEach((p) => {
     fontFace: BODY, fontSize: 11, italic: true, color: MUTED, margin: 0,
   });
 
-  s.addNotes("Do not read this slide aloud. Leave it on screen while you close. If asked, the AI transcript is retained and can be provided.");
+  s.addNotes("[7:55-end]  REFERENCES - silence.\n\nSay nothing. Leave the slide up for three to five seconds and end the recording.\n\nCUE: Do not read references aloud. Do not add a thank-you or a sign-off ramble - the recommendation on slide 12 is your ending. If asked, the AI transcript is retained and available on request.");
 }
 
 pres.writeFile({ fileName: "Followmont-Prompt-Chain.pptx" }).then(() => console.log("written"));
