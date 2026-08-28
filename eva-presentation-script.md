@@ -4,12 +4,67 @@ Runtime 4:55 · 846 spoken words · ~165 wpm · trim the marked lines to ~750 wo
 
 ## Fix before you record
 
-All in the three statement blocks you typed (columns G, K, O). Nothing in the assignment's own text on the left needs changing, and the April sheet is clean. Use Find & Replace — most appear twice.
+All of this is in the analysis blocks you typed. Nothing in the assignment's own text down the left needs changing. Use Find & Replace — several appear in more than one block.
 
-### 1. Three headings, three different statements
+### PAGE 1 — March
 
-| Block | It says | Should say |
-|---|---|---|
+**Block 1 · Income statement (column G)**
+
+| It says | Should say |
+|---|---|
+| `Budget income sattement` | Budget Income Statement |
+| `moht of march` | for the month of March |
+| `ETF Dividents interest` | ETF dividends |
+| `Uber eat gift card` | Uber Eats gift card |
+| `Exoenses` | Expenses |
+| `Cash to cahrity` | Cash to charity |
+| `Groceries and personal items paid in cahs` | ...paid in cash |
+| `Diding out and social activity` | Dining out and social activities |
+| `music and video streaming subscription` | Music and video streaming subscriptions |
+| `vehicle costs` | Vehicle costs |
+| `Gym memebership` | Gym membership |
+
+**Block 2 · Balance sheet (column K)**
+
+| It says | Should say |
+|---|---|
+| `Budget income sattement` | **Balance Sheet** — this block is not an income statement |
+| `As 31 march` | as at 31 March |
+| `cash at bank account` | Cash at bank account |
+| `Uber eat gift card` | Uber Eats gift card |
+| `holiday Deposit` | Holiday deposit |
+| `crredit car balanced owed` | Credit card balance owed |
+| `personal loan` | Personal loan |
+| `Net assests` | Net assets |
+| `Equity ( net worth, A-L)` | Equity (net worth = A − L) |
+| `Net worth 1 march` | Net worth 1 March |
+| `Add net uncome for march` | Add net income for March |
+| `Net worth 31 march` | Net worth 31 March |
+| Empty bordered box under `Net assets` | Fill it or clear the border |
+
+**Block 3 · Cash flow (column O)**
+
+| It says | Should say |
+|---|---|
+| `Budget income sattement` | **Cash Flow Statement** — this block is not an income statement |
+| `moht of march` | for the month of March |
+| `Cash Receipets (inflow of cas` | Cash receipts (inflows of cash) — closing bracket missing too |
+| `ETF Dividents interest` | ETF dividends |
+| `Cahs pay,ents (outflows of cash)` | Cash payments (outflows of cash) |
+| `Cash to cahrity` | Cash to charity |
+| `Groceries and personal items paid in cahs` | ...paid in cash |
+| `Diding out and social activity` | Dining out and social activities |
+| `music and video streaming subscription` | Music and video streaming subscriptions |
+| `FEB Credit card balanced paid` | Feb credit card balance paid |
+| `holiday Deposit` | Holiday deposit |
+| `vehicle costs` | Vehicle costs |
+| `Net cash inflow ( outflow)` | Net cash inflow/(outflow) |
+
+### PAGE 2 — April
+
+No spelling to fix. The grid holds only figures, and the `ASSETS − LIABILITIES = OPENING EQUITY + (REVENUE − EXPENSES)` header is spelled correctly. Two housekeeping points: clear the empty green-bordered box near the bottom of the grid if it isn't an answer, and check why 3.3 and 3.4 don't show the green tick that 3.1 and 3.2 do — those two cells may be missing their check formula.
+
+---|---|---|
 | Income statement (G) | `Budget income sattement` / `moht of march` | Budget Income Statement / for the month of March |
 | Balance sheet (K) | `Budget income sattement` / `As 31 march` | Balance Sheet / as at 31 March |
 | Cash flow (O) | `Budget income sattement` / `moht of march` | Cash Flow Statement / for the month of March |
