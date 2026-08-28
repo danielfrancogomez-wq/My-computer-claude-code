@@ -1,0 +1,330 @@
+<title>Five Minutes With Eva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --paper:#f6f7f4; --surface:#ffffff; --ink:#17212a; --muted:#5f6c74;
+  --rule:#dce0da; --rule-strong:#c3cabf;
+  --accent:#1c6b58; --accent-soft:#e4efe9; --accent-line:#8fbfae;
+  --ochre:#8f5715; --ochre-soft:#f6ecdb; --ochre-line:#d8b482;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans Condensed","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#11171c; --surface:#182027; --ink:#e7ebe6; --muted:#96a2a9;
+    --rule:#28323a; --rule-strong:#3a4750;
+    --accent:#5fc0a2; --accent-soft:#16302a; --accent-line:#2f6a5a;
+    --ochre:#dda869; --ochre-soft:#2b2317; --ochre-line:#6d5730;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#11171c; --surface:#182027; --ink:#e7ebe6; --muted:#96a2a9;
+  --rule:#28323a; --rule-strong:#3a4750;
+  --accent:#5fc0a2; --accent-soft:#16302a; --accent-line:#2f6a5a;
+  --ochre:#dda869; --ochre-soft:#2b2317; --ochre-line:#6d5730;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--serif); line-height:1.6;
+  margin:0; padding:0 20px 80px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1020px;margin:0 auto}
+
+/* ---------- masthead ---------- */
+.mast{padding:56px 0 28px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:var(--sans);font-weight:600;font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 14px
+}
+h1{
+  font-family:var(--sans);font-weight:700;font-size:clamp(2.4rem,6vw,3.9rem);
+  line-height:1.02;letter-spacing:-.015em;margin:0;text-wrap:balance
+}
+.standfirst{
+  font-size:1.08rem;color:var(--muted);max-width:60ch;margin:16px 0 0
+}
+.meta{
+  display:flex;flex-wrap:wrap;gap:10px 32px;margin:28px 0 0;
+  font-family:var(--mono);font-size:.78rem;color:var(--muted)
+}
+.meta b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* ---------- generic section heads ---------- */
+h2{
+  font-family:var(--sans);font-weight:700;font-size:1.5rem;letter-spacing:-.01em;
+  margin:0 0 6px;text-wrap:balance
+}
+h3{font-family:var(--sans);font-weight:600;font-size:1.05rem;margin:0 0 8px}
+.lede{color:var(--muted);font-size:.98rem;margin:0}
+
+/* ---------- pre-flight ---------- */
+.preflight{
+  margin:36px 0 0;border:1px solid var(--ochre-line);background:var(--ochre-soft);
+  border-radius:3px;padding:22px 24px
+}
+.preflight h2{color:var(--ochre);font-size:1.15rem}
+.preflight ol{margin:14px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:9px;font-size:.95rem}
+.preflight code{font-family:var(--mono);font-size:.84em;background:var(--surface);padding:1px 5px;border-radius:2px}
+
+/* ---------- script ---------- */
+.script-head{margin:60px 0 0;padding-bottom:10px;border-bottom:1px solid var(--rule-strong)}
+.beat{
+  display:grid;grid-template-columns:132px 1fr;gap:0 34px;
+  padding:30px 0;border-bottom:1px solid var(--rule)
+}
+.rail{display:flex;flex-direction:column;gap:12px;position:sticky;top:20px;align-self:start}
+.tc{
+  font-family:var(--mono);font-weight:600;font-size:1.05rem;
+  color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.02em
+}
+.beat-label{
+  font-family:var(--sans);font-weight:600;font-size:.74rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);line-height:1.4
+}
+.cue{
+  font-family:var(--mono);font-size:.73rem;line-height:1.5;color:var(--muted);
+  border-left:2px solid var(--accent-line);padding-left:10px
+}
+.cue span{display:block;font-weight:600;color:var(--ink);margin-bottom:3px;letter-spacing:.04em}
+.lines{display:flex;flex-direction:column;gap:15px}
+.say{font-size:1.14rem;line-height:1.68;margin:0;max-width:62ch}
+.fig{
+  font-family:var(--mono);font-weight:600;font-size:.94em;
+  font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap
+}
+.cut{
+  border-left:2px dashed var(--ochre-line);padding-left:14px;margin-left:-16px
+}
+.cut::before{
+  content:"CUT IF LONG";display:block;font-family:var(--sans);font-weight:600;
+  font-size:.66rem;letter-spacing:.12em;color:var(--ochre);margin-bottom:5px
+}
+.stage{
+  font-family:var(--mono);font-size:.8rem;color:var(--ochre);margin:0;max-width:62ch
+}
+
+/* ---------- appendix ---------- */
+.appendix{margin:72px 0 0}
+.scroller{overflow-x:auto;margin:18px 0 0;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:520px}
+caption{
+  text-align:left;font-family:var(--sans);font-weight:600;font-size:.75rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:14px 18px 0
+}
+th,td{padding:9px 18px;text-align:left;border-bottom:1px solid var(--rule)}
+th{
+  font-family:var(--sans);font-weight:600;font-size:.74rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted)
+}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+tr.total td{font-weight:600;background:var(--accent-soft)}
+.ok{font-family:var(--mono);font-size:.8rem;color:var(--accent);font-weight:600}
+
+.qa{display:flex;flex-direction:column;gap:22px;margin:20px 0 0}
+.qa-item{border-left:3px solid var(--accent-line);padding-left:18px}
+.qa-item p{margin:6px 0 0;font-size:1rem;max-width:62ch}
+.qa-item p:first-of-type{color:var(--muted)}
+
+@media (max-width:760px){
+  .beat{grid-template-columns:1fr;gap:16px}
+  .rail{position:static;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 16px}
+  .cue{flex-basis:100%;border-left:none;border-top:2px solid var(--accent-line);padding:8px 0 0}
+  .cut{margin-left:0}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Video presentation · Financial coaching session</p>
+  <h1>Five Minutes With Eva</h1>
+  <p class="standfirst">Word-for-word script for the client walkthrough — March's three statements, then April's seven transactions, explained the way you'd explain them across a kitchen table.</p>
+  <div class="meta">
+    <span>Runtime <b>4:55</b></span>
+    <span>Spoken <b>846 words</b></span>
+    <span>Pace <b>~165 wpm</b></span>
+    <span>Trim to <b>~750</b> if slow</span>
+  </div>
+</header>
+
+<section class="preflight">
+  <h2>Fix these three things before you record</h2>
+  <ol>
+    <li><b>Column headings.</b> All three of your statements are headed <code>Budget income sattement</code>. Only the first one is an income statement — rename the middle to <code>Balance Sheet as at 31 March</code> and the right-hand one to <code>Cash Flow Statement for the month of March</code>. Markers look for this.</li>
+    <li><b>Spelling.</b> Nine visible typos on screen: <code>sattement</code>, <code>moht of march</code>, <code>Exoenses</code>, <code>cahrity</code>, <code>Diding out</code>, <code>Cahs pay,ents</code>, <code>Receipets</code>, <code>crredit</code>, <code>assests</code>, <code>memebership</code>. Two minutes to fix, and presentation is separately marked.</li>
+    <li><b>Blank cell.</b> There's an empty bordered box under Net assets in the balance-sheet column. Fill it or clear the border — on camera it reads as an unfinished answer.</li>
+  </ol>
+</section>
+
+<div class="script-head">
+  <h2>The script</h2>
+  <p class="lede">Left rail is what to have on screen. Serif text is what you say.</p>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">0:00</div>
+    <div class="beat-label">Open</div>
+    <div class="cue"><span>ON SCREEN</span>The March brief — Eva's list of what she owned, owed, earned and spent.</div>
+  </div>
+  <div class="lines">
+    <p class="say">Hi Eva. Thanks for sending your numbers through — I've turned them into a proper set of financial statements. In the next five minutes you'll know three things: what you earned in March, what you're actually worth, and where your cash went. Then we'll look at April.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">0:20</div>
+    <div class="beat-label">The three questions</div>
+    <div class="cue"><span>ON SCREEN</span>Zoom out so all three statement columns are visible at once.</div>
+  </div>
+  <div class="lines">
+    <p class="say">I've built three statements, and each one answers a different question. The Income Statement asks: did I get richer or poorer this month? The Balance Sheet asks: what am I worth right now? The Cash Flow Statement asks: where did the money in my bank actually go? Three different questions — and, importantly, three different answers.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">0:45</div>
+    <div class="beat-label">Income statement</div>
+    <div class="cue"><span>ON SCREEN</span>Left column. Highlight the Revenue block, then Expenses, then the green Net Income cell.</div>
+  </div>
+  <div class="lines">
+    <p class="say">Start on the left. Money in for March: <b class="fig">$6,130</b>. Salary $5,200, freelance tutoring $480, $350 of dividends from your ETF, and the $100 Uber Eats gift card from Uncle Wayne. That gift card counts as income — you didn't work for it, but you're a hundred dollars better off than you were.</p>
+    <p class="say cut">Money out: <b class="fig">$3,036</b>. Rent $917, groceries $661, vehicle costs $480, dining out $320, insurance $170, streaming $140, electricity $103, charity $95, phone $85, gym $65.</p>
+    <p class="say">Two of those are worth a pause. The gym went on your credit card, and the electricity bill hasn't been paid yet — but both are still March expenses, because you used the gym and you used the power in March. An expense counts when you <em>use</em> the thing, not when the money leaves.</p>
+    <p class="say">And notice what's missing from that list: the $1,000 holiday deposit. That isn't an expense — you haven't taken the holiday. That money is still yours, just parked somewhere else.</p>
+    <p class="say">Money in, minus money out: your net income for March was <b class="fig">$3,094</b>. You finished the month $3,094 better off than you started it.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">1:50</div>
+    <div class="beat-label">Balance sheet</div>
+    <div class="cue"><span>ON SCREEN</span>Middle column. Assets total, then Liabilities, then the Net assets and Equity boxes.</div>
+  </div>
+  <div class="lines">
+    <p class="say">Now the middle column — the Balance Sheet. Think of this one as a photograph of a single day: the 31st of March.</p>
+    <p class="say">Everything you own comes to <b class="fig">$59,831</b>. Your ETF is the big one at $34,000, then the bank account at $9,752, the car at $7,700, camping and sports gear $4,900 and the laptop $2,379 — plus the holiday deposit and the gift card, because you're still holding both of those.</p>
+    <p class="say">Everything you owe comes to <b class="fig">$2,873</b>. The personal loan $2,200, the credit card $570, and that unpaid electricity $103.</p>
+    <p class="say">Own minus owe is your net worth: <b class="fig">$56,958</b>.</p>
+    <p class="say">And here's the check I like. You started March worth $53,864. Add the $3,094 you made during the month, and you land exactly on $56,958. Two completely different routes to the same number — that's how I know these statements hang together.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">2:35</div>
+    <div class="beat-label">Cash flow · the key insight</div>
+    <div class="cue"><span>ON SCREEN</span>Right column. Point at Net cash flow $1,752, then the bank balances $8,000 → $9,752.</div>
+  </div>
+  <div class="lines">
+    <p class="say">Third column: cash. <b class="fig">$6,030</b> came in, <b class="fig">$4,278</b> went out, so your bank account grew <b class="fig">$1,752</b> — from $8,000 up to $9,752.</p>
+    <p class="say">Cash in is $100 lower than income, because the gift card never touched your bank account. And on the way out, the gym and the electricity were expenses with no cash moving, while the $1,000 holiday deposit and the $410 you paid off February's credit card were cash going out that weren't expenses at all — that $410 was settling last month's spending, not this month's.</p>
+    <p class="say">So you made $3,094, but your bank only grew $1,752. Here's the bridge between them: start at $3,094, take out the $100 gift card, add back the $168 you expensed but didn't pay, then subtract the $1,410 you paid but didn't expense. $1,752. Exactly.</p>
+    <p class="say">That gap is the thing to watch, Eva. Profit is not the same as cash — and it's cash that buys the apartment.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">3:20</div>
+    <div class="beat-label">April · the accounting equation</div>
+    <div class="cue"><span>ON SCREEN</span>Switch tabs. Show the equation header row, then walk down the yellow rows as you speak.</div>
+  </div>
+  <div class="lines">
+    <p class="say">Now April. You gave me seven transactions and asked what each one did to you. I've run them through the accounting equation: what you own, minus what you owe, equals your net worth — and your net worth only moves through income and expenses. The rule is that every transaction does two things, never one.</p>
+    <p class="say">Easy ones first. Your salary, $2,718, and the $48 you won at the casino — cash in, and both count as income. Income doesn't have to come from work. Your phone bill $96 and the traffic fine $284 — cash out, and genuinely gone. That's $380 of expenses.</p>
+    <p class="say">Three are more interesting. The running shoes, $252 on the credit card: you own $252 more, and you owe $252 more. Your net worth didn't move at all.</p>
+    <p class="say">The concert tickets, $193 — the concert isn't until December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in.</p>
+    <p class="say">And paying off the credit card, $570. This is the one people get wrong. It <em>feels</em> like spending, but $570 left the bank and $570 of debt vanished at the same moment. You are exactly as well off as you were a minute before.</p>
+    <p class="say">April in total: assets up <b class="fig">$2,261</b>, liabilities down <b class="fig">$125</b>, revenue up <b class="fig">$2,766</b>, expenses up <b class="fig">$380</b>. And it balances — $2,261 plus $125 is $2,386, and $2,766 minus $380 is also $2,386. Your net worth grew $2,386 in April.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="rail">
+    <div class="tc">4:35</div>
+    <div class="beat-label">Close</div>
+    <div class="cue"><span>ON SCREEN</span>Back to the balance sheet, or just your face. Slow down here.</div>
+  </div>
+  <div class="lines">
+    <p class="say">So — three things to take away. One: you're worth $56,958, and April added about another $2,400 to that. Two: paying off debt and putting down deposits <em>feel</em> like spending, but they aren't — you're moving money between pockets, not losing it. Three: the number that gets you the apartment is cash, and yours grew $1,752 in March. Keep that gap open and you're on track. I'll send this through — call me with any questions.</p>
+    <p class="stage">Pause. Don't rush the last line.</p>
+  </div>
+</div>
+
+<section class="appendix">
+  <h2>Figure check</h2>
+  <p class="lede">Every total re-calculated from the source data. All of it agrees with what's in your workbook.</p>
+
+  <div class="scroller">
+    <table>
+      <caption>March — the three statements</caption>
+      <thead><tr><th>Line</th><th>Workings</th><th class="num">Your sheet</th><th>Check</th></tr></thead>
+      <tbody>
+        <tr><td>Revenue</td><td>5,200 + 480 + 350 + 100</td><td class="num">6,130</td><td class="ok">agrees</td></tr>
+        <tr><td>Expenses</td><td>ten items, incl. gym on card + unpaid power</td><td class="num">3,036</td><td class="ok">agrees</td></tr>
+        <tr class="total"><td>Net income (Q2.2)</td><td>6,130 − 3,036</td><td class="num">3,094</td><td class="ok">agrees</td></tr>
+        <tr><td>Assets</td><td>seven items, incl. deposit + gift card</td><td class="num">59,831</td><td class="ok">agrees</td></tr>
+        <tr class="total"><td>Liabilities (Q2.3)</td><td>2,200 + 570 + 103</td><td class="num">2,873</td><td class="ok">agrees</td></tr>
+        <tr><td>Net assets</td><td>59,831 − 2,873</td><td class="num">56,958</td><td class="ok">agrees</td></tr>
+        <tr><td>Equity roll-forward</td><td>53,864 + 3,094</td><td class="num">56,958</td><td class="ok">ties out</td></tr>
+        <tr><td>Cash receipts</td><td>5,200 + 480 + 350 — gift card excluded</td><td class="num">6,030</td><td class="ok">agrees</td></tr>
+        <tr><td>Cash payments</td><td>ten items, incl. Feb card + deposit</td><td class="num">4,278</td><td class="ok">agrees</td></tr>
+        <tr class="total"><td>Closing bank (Q2.4)</td><td>8,000 + 6,030 − 4,278</td><td class="num">9,752</td><td class="ok">agrees</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <caption>April — accounting equation</caption>
+      <thead><tr><th>Transaction</th><th class="num">Assets</th><th class="num">Liabilities</th><th class="num">Revenue</th><th class="num">Expenses</th></tr></thead>
+      <tbody>
+        <tr><td>Running shoes on credit card</td><td class="num">+252</td><td class="num">+252</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>Mobile phone bill from bank</td><td class="num">−96</td><td class="num">—</td><td class="num">—</td><td class="num">+96</td></tr>
+        <tr><td>Salary into bank</td><td class="num">+2,718</td><td class="num">—</td><td class="num">+2,718</td><td class="num">—</td></tr>
+        <tr><td>Casino winnings</td><td class="num">+48</td><td class="num">—</td><td class="num">+48</td><td class="num">—</td></tr>
+        <tr><td>Traffic fine from bank</td><td class="num">−284</td><td class="num">—</td><td class="num">—</td><td class="num">+284</td></tr>
+        <tr><td>Pays off credit card bill</td><td class="num">−570</td><td class="num">−570</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>Concert tickets (December) on card</td><td class="num">+193</td><td class="num">+193</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr class="total"><td>Net movement (Q3.1–3.4)</td><td class="num">+2,261</td><td class="num">−125</td><td class="num">+2,766</td><td class="num">+380</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="lede" style="margin-top:14px">Balance proof: assets − liabilities = 2,261 − (−125) = <b>2,386</b>. Revenue − expenses = 2,766 − 380 = <b>2,386</b>. The equation holds, so the four answers are internally consistent. Closing credit card balance after April is $445.</p>
+</section>
+
+<section class="appendix">
+  <h2>If she pushes back</h2>
+  <p class="lede">Three questions a sharp client — or a marker — could reasonably ask. Have these ready; don't volunteer them.</p>
+  <div class="qa">
+    <div class="qa-item">
+      <h3>"Why are the running shoes an asset and not just spending?"</h3>
+      <p>Because they're sporting equipment you still own at month end — the same logic that puts your camping and sports gear on the balance sheet in March.</p>
+      <p>If you'd rather treat them as everyday spending, assets rise $2,009 instead of $2,261 and expenses become $632 instead of $380. The equation still balances either way; the point is to be consistent, and we've been consistent with March.</p>
+    </div>
+    <div class="qa-item">
+      <h3>"Where does the $53,864 opening net worth come from?"</h3>
+      <p>It's what you must have been worth on 1 March for the month to end where it did.</p>
+      <p>Working backwards: $56,958 closing, less the $3,094 you earned, equals $53,864. It also reconciles forwards — your assets at 1 March were $56,979, and you owed $3,115 at that point, including a credit card balance you'd only partly cleared.</p>
+    </div>
+    <div class="qa-item">
+      <h3>"Why is a gift income? I didn't earn it."</h3>
+      <p>Income isn't defined by effort — it's anything that increases your net worth without you borrowing to get it.</p>
+      <p>The gift card made you $100 better off, so it's revenue. But it never went through your bank, so it's deliberately left out of the cash flow statement. Same reasoning as the casino win in April.</p>
+    </div>
+  </div>
+</section>
+
+</div>
