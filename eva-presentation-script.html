@@ -70,6 +70,8 @@ h3{font-family:var(--sans);font-weight:600;font-size:1.05rem;margin:0 0 8px}
   border-radius:3px;padding:22px 24px
 }
 .preflight h2{color:var(--ochre);font-size:1.15rem}
+.preflight h3{color:var(--ochre);margin-bottom:0}
+.preflight .scroller{border-color:var(--ochre-line)}
 .preflight ol{margin:14px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:9px;font-size:.95rem}
 .preflight code{font-family:var(--mono);font-size:.84em;background:var(--surface);padding:1px 5px;border-radius:2px}
 
@@ -156,12 +158,63 @@ tr.total td{font-weight:600;background:var(--accent-soft)}
 </header>
 
 <section class="preflight">
-  <h2>Fix these three things before you record</h2>
-  <ol>
-    <li><b>Column headings.</b> All three of your statements are headed <code>Budget income sattement</code>. Only the first one is an income statement — rename the middle to <code>Balance Sheet as at 31 March</code> and the right-hand one to <code>Cash Flow Statement for the month of March</code>. Markers look for this.</li>
-    <li><b>Spelling.</b> Nine visible typos on screen: <code>sattement</code>, <code>moht of march</code>, <code>Exoenses</code>, <code>cahrity</code>, <code>Diding out</code>, <code>Cahs pay,ents</code>, <code>Receipets</code>, <code>crredit</code>, <code>assests</code>, <code>memebership</code>. Two minutes to fix, and presentation is separately marked.</li>
-    <li><b>Blank cell.</b> There's an empty bordered box under Net assets in the balance-sheet column. Fill it or clear the border — on camera it reads as an unfinished answer.</li>
-  </ol>
+  <h2>Fix these before you record</h2>
+  <p class="lede" style="margin-top:8px">Presentation is marked separately from your workings, and all of this is legible on camera. Everything below is in the three statement blocks you typed (columns G, K and O) — nothing in the assignment's own text on the left needs touching. Use Find &amp; Replace, since most appear twice.</p>
+
+  <h3 style="margin:24px 0 0">1. Three headings, three different statements</h3>
+  <p class="lede" style="margin-top:6px">Every block is currently headed "Budget income sattement". Only the first one is an income statement.</p>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Block</th><th>It says</th><th>Should say</th></tr></thead>
+      <tbody>
+        <tr><td>Income statement (col G)</td><td><code>Budget income sattement</code> / <code>moht of march</code></td><td>Budget Income Statement / for the month of March</td></tr>
+        <tr><td>Balance sheet (col K)</td><td><code>Budget income sattement</code> / <code>As 31 march</code></td><td>Balance Sheet / as at 31 March</td></tr>
+        <tr><td>Cash flow (col O)</td><td><code>Budget income sattement</code> / <code>moht of march</code></td><td>Cash Flow Statement / for the month of March</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin:28px 0 0">2. Misspelled line labels</h3>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Where</th><th>It says</th><th>Should say</th></tr></thead>
+      <tbody>
+        <tr><td>G</td><td><code>Exoenses</code></td><td>Expenses</td></tr>
+        <tr><td>G · O</td><td><code>ETF Dividents interest</code></td><td>ETF dividends</td></tr>
+        <tr><td>G · K</td><td><code>Uber eat gift card</code></td><td>Uber Eats gift card</td></tr>
+        <tr><td>G · O</td><td><code>Cash to cahrity</code></td><td>Cash to charity</td></tr>
+        <tr><td>G · O</td><td><code>…personal items paid in cahs</code></td><td>…personal items paid in cash</td></tr>
+        <tr><td>G · O</td><td><code>Diding out and social activity</code></td><td>Dining out and social activities</td></tr>
+        <tr><td>G</td><td><code>Gym memebership</code></td><td>Gym membership</td></tr>
+        <tr><td>K</td><td><code>crredit car balanced owed</code></td><td>Credit card balance owed</td></tr>
+        <tr><td>K</td><td><code>Net assests</code></td><td>Net assets</td></tr>
+        <tr><td>K</td><td><code>Add net uncome for march</code></td><td>Add net income for March</td></tr>
+        <tr><td>O</td><td><code>Cash Receipets (inflow of cas</code></td><td>Cash receipts (inflows of cash)</td></tr>
+        <tr><td>O</td><td><code>Cahs pay,ents (outflows of cash)</code></td><td>Cash payments (outflows of cash)</td></tr>
+        <tr><td>O</td><td><code>FEB Credit card balanced paid</code></td><td>Feb credit card balance paid</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin:28px 0 0">3. Capitals and small tidy-ups</h3>
+  <p class="lede" style="margin-top:6px">Not misspellings, but they make the sheet look unfinished next to the rows that are capitalised.</p>
+  <div class="scroller">
+    <table>
+      <thead><tr><th>Where</th><th>It says</th><th>Should say</th></tr></thead>
+      <tbody>
+        <tr><td>G · O</td><td><code>music and video streaming subscription</code></td><td>Music and video streaming subscriptions</td></tr>
+        <tr><td>G</td><td><code>vehicle costs</code></td><td>Vehicle costs</td></tr>
+        <tr><td>K</td><td><code>cash at bank account</code> · <code>personal loan</code></td><td>Cash at bank account · Personal loan</td></tr>
+        <tr><td>K · O</td><td><code>holiday Deposit</code></td><td>Holiday deposit</td></tr>
+        <tr><td>K</td><td><code>Net worth 1 march</code> · <code>Net worth 31 march</code></td><td>Net worth 1 March · Net worth 31 March</td></tr>
+        <tr><td>K</td><td><code>Equity ( net worth, A-L)</code></td><td>Equity (net worth = A − L)</td></tr>
+        <tr><td>O</td><td><code>Net cash inflow ( outflow)</code></td><td>Net cash inflow/(outflow)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin:28px 0 0">4. One blank cell</h3>
+  <p class="lede" style="margin-top:6px">There's an empty bordered box directly under Net assets in the balance-sheet column. Fill it or clear the border — on camera it reads as a question you didn't finish. Nothing to fix in the April sheet; the labels there are clean.</p>
 </section>
 
 <div class="script-head">

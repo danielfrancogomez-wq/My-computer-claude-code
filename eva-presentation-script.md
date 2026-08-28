@@ -4,9 +4,49 @@ Runtime 4:55 · 846 spoken words · ~165 wpm · trim the marked lines to ~750 wo
 
 ## Fix before you record
 
-1. **Column headings.** All three statements are headed "Budget income sattement". Rename the middle one to **Balance Sheet as at 31 March** and the right-hand one to **Cash Flow Statement for the month of March**.
-2. **Spelling.** sattement, moht of march, Exoenses, cahrity, Diding out, Cahs pay,ents, Receipets, crredit, assests, memebership.
-3. **Blank cell.** Empty bordered box under Net assets — fill it or clear the border.
+All in the three statement blocks you typed (columns G, K, O). Nothing in the assignment's own text on the left needs changing, and the April sheet is clean. Use Find & Replace — most appear twice.
+
+### 1. Three headings, three different statements
+
+| Block | It says | Should say |
+|---|---|---|
+| Income statement (G) | `Budget income sattement` / `moht of march` | Budget Income Statement / for the month of March |
+| Balance sheet (K) | `Budget income sattement` / `As 31 march` | Balance Sheet / as at 31 March |
+| Cash flow (O) | `Budget income sattement` / `moht of march` | Cash Flow Statement / for the month of March |
+
+### 2. Misspelled line labels
+
+| Where | It says | Should say |
+|---|---|---|
+| G | `Exoenses` | Expenses |
+| G, O | `ETF Dividents interest` | ETF dividends |
+| G, K | `Uber eat gift card` | Uber Eats gift card |
+| G, O | `Cash to cahrity` | Cash to charity |
+| G, O | `...personal items paid in cahs` | ...personal items paid in cash |
+| G, O | `Diding out and social activity` | Dining out and social activities |
+| G | `Gym memebership` | Gym membership |
+| K | `crredit car balanced owed` | Credit card balance owed |
+| K | `Net assests` | Net assets |
+| K | `Add net uncome for march` | Add net income for March |
+| O | `Cash Receipets (inflow of cas` | Cash receipts (inflows of cash) |
+| O | `Cahs pay,ents (outflows of cash)` | Cash payments (outflows of cash) |
+| O | `FEB Credit card balanced paid` | Feb credit card balance paid |
+
+### 3. Capitals and small tidy-ups
+
+| Where | It says | Should say |
+|---|---|---|
+| G, O | `music and video streaming subscription` | Music and video streaming subscriptions |
+| G | `vehicle costs` | Vehicle costs |
+| K | `cash at bank account`, `personal loan` | Cash at bank account, Personal loan |
+| K, O | `holiday Deposit` | Holiday deposit |
+| K | `Net worth 1 march`, `Net worth 31 march` | Net worth 1 March, Net worth 31 March |
+| K | `Equity ( net worth, A-L)` | Equity (net worth = A − L) |
+| O | `Net cash inflow ( outflow)` | Net cash inflow/(outflow) |
+
+### 4. One blank cell
+
+Empty bordered box directly under Net assets in the balance-sheet column — fill it or clear the border.
 
 ---
 
