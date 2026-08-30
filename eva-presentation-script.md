@@ -105,17 +105,17 @@ Empty bordered box directly under Net assets in the balance-sheet column — fil
 
 ---
 
-## What's in and what's out
+## How it runs
 
-**In:** a one-line definition of every category — revenue, expenses, net income, assets, liabilities, net assets, cash in, cash out — each followed by its highlighted total and where it comes from. Plus the gym on the credit card, the unpaid electricity, and the holiday deposit.
+**March** goes left to right through the three statements — each category defined in one sentence, then its highlighted total and where it comes from.
 
-**Out:** line-by-line figures, the equity cross-check, the profit-to-cash bridge, and anything that was explaining rather than telling.
+**April** goes straight down the list, transaction 1 to 7, in sheet order. One sentence each.
 
-**4:35 scripted** (March 2:50 + April 1:45) — 25 seconds of slack under your 5:00 limit.
+**4:45 scripted** (March 2:45 + April 2:00) — fifteen seconds under the 5:00 limit.
 
 ---
 
-## Exercise 1 — March (2:50)
+## Exercise 1 — March (2:45)
 
 ### 0:00 — OPEN
 *On screen: Share the workbook.*
@@ -185,46 +185,64 @@ That's March. Now April.
 
 ---
 
-## Exercise 2 — April (1:45)
+## Exercise 2 — April (2:00) — transactions in sheet order
 
 ### 0:00 — OPEN
-*On screen: Switch to the April tab.*
+*On screen: Switch to the April tab. Show the list of seven.*
 
-Now April. Seven transactions, and what each one did to you. The tool is this equation.
+Now April. Seven transactions, in the order they happened. For each one I'll tell you what changed.
 
 ### 0:08 — THE FOUR COLUMNS
-*On screen: Point at each heading as you name it.*
+*On screen: Point at each column heading as you name it.*
 
 Four things can change. Assets, what you own. Liabilities, what you owe. Revenue, what leaves you better off. Expenses, what leaves you worse off. Every transaction changes two of them. Never one.
 
-### 0:25 — THE EASY FOUR
-*On screen: Walk down the salary, casino, phone and fine rows.*
+### 0:25 — 1 · RUNNING SHOES
+*On screen: Row 1. Point at the +252 under Assets, then the +252 under Liabilities.*
 
-Four are simple. Salary in — assets up, revenue. Casino win — assets up, revenue, because you're better off even though you didn't work for it. Phone bill out — assets down, expense. Traffic fine, the same. Together, revenue up two thousand seven hundred and sixty-six, expenses up three hundred and eighty.
+One. Running shoes on the credit card, two hundred and fifty-two dollars. You own the shoes, so assets up. You owe the card, so liabilities up. They cancel — you're not worse off.
 
-### 0:50 — SHOES AND TICKETS
-*On screen: The shoes row, then the tickets row.*
+### 0:40 — 2 · PHONE BILL
+*On screen: Row 2. Point at the minus 96, then the expense column.*
 
-Then the credit card ones. Running shoes: you own the shoes, so assets up — but you owe the card, so liabilities up. They cancel. You're not worse off.
+Two. Mobile phone bill, ninety-six dollars, straight from your bank. Assets down, and it's an expense. You're ninety-six dollars worse off.
 
-Concert tickets, the same — but the concert is in December. You haven't used them yet, so it isn't an expense.
+### 0:50 — 3 · SALARY
+*On screen: Row 3.*
 
-### 1:15 — PAYING OFF THE CARD
-*On screen: The credit card payoff row. Let both numbers show.*
+Three. Salary, two thousand, seven hundred and eighteen, into your bank. Assets up, and it's revenue.
 
-And you paid off your credit card. Money left your account, so assets down — but the debt vanished, so liabilities down by the same amount. It *feels* like spending. It isn't. Your net worth didn't move.
+### 1:00 — 4 · CASINO WIN
+*On screen: Row 4. Point at the revenue column.*
 
-### 1:35 — YOUR FOUR ANSWERS
+Four. Forty-eight dollars won at the casino. Assets up, and revenue — you didn't work for it, but you're better off.
+
+### 1:10 — 5 · TRAFFIC FINE
+*On screen: Row 5.*
+
+Five. Traffic fine, two hundred and eighty-four dollars. Assets down, and it's an expense.
+
+### 1:20 — 6 · PAYING OFF THE CARD
+*On screen: Row 6. Let both minus figures sit on screen.*
+
+Six. You pay off your credit card, five hundred and seventy. Money leaves your account, so assets down — but the debt goes too, so liabilities down by the same amount. It *feels* like spending. It isn't. Your net worth doesn't move.
+
+### 1:35 — 7 · CONCERT TICKETS
+*On screen: Row 7. Point at the empty Expenses column beside it.*
+
+Seven. Concert tickets on the card, a hundred and ninety-three. Assets up, liabilities up — same as the shoes. But the concert is in December. You haven't used them yet, so it isn't an expense.
+
+### 1:50 — YOUR FOUR ANSWERS
 *On screen: Point at each boxed answer in turn.*
 
-Your four answers: assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.
+So your four answers. Assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.
 
 And it balances — both sides come to two thousand, three hundred and eighty-six. That's how much better off April left you.
 
-### 1:55 — CLOSE · SLOW DOWN
+### 2:10 — CLOSE · SLOW DOWN
 *On screen: Just your face.*
 
-So your net worth is growing, Eva. The thing to watch is the gap between what you earn and what actually lands in your bank.
+That's April, Eva. Your net worth is growing.
 
 ---
 

@@ -318,28 +318,41 @@ MARCH = [
 ]
 
 APRIL = [
- ("0:00", "OPEN", "Switch to the April tab.", [
-   ("say", "Now April. Seven transactions, and what each one did to you. The tool is this equation."),
+ ("0:00", "OPEN", "Switch to the April tab. Show the list of seven.", [
+   ("say", "Now April. Seven transactions, in the order they happened. For each one I'll tell you what changed."),
  ]),
- ("0:08", "THE FOUR COLUMNS", "Point at each heading as you name it.", [
+ ("0:08", "THE FOUR COLUMNS", "Point at each column heading as you name it.", [
    ("say", "Four things can change. Assets, what you own. Liabilities, what you owe. Revenue, what leaves you better off. Expenses, what leaves you worse off. Every transaction changes two of them. Never one."),
  ]),
- ("0:25", "THE EASY FOUR", "Walk down the salary, casino, phone and fine rows.", [
-   ("say", "Four are simple. Salary in — assets up, revenue. Casino win — assets up, revenue, because you're better off even though you didn't work for it. Phone bill out — assets down, expense. Traffic fine, the same. Together, revenue up two thousand seven hundred and sixty-six, expenses up three hundred and eighty."),
+
+ ("0:25", "1 &middot; RUNNING SHOES", "Row 1. Point at the +252 under Assets, then the +252 under Liabilities.", [
+   ("say", "One. Running shoes on the credit card, two hundred and fifty-two dollars. You own the shoes, so assets up. You owe the card, so liabilities up. They cancel — you're not worse off."),
  ]),
- ("0:50", "SHOES AND TICKETS", "The shoes row, then the tickets row.", [
-   ("say", "Then the credit card ones. Running shoes: you own the shoes, so assets up — but you owe the card, so liabilities up. They cancel. You're not worse off."),
-   ("say", "Concert tickets, the same — but the concert is in December. You haven't used them yet, so it isn't an expense."),
+ ("0:40", "2 &middot; PHONE BILL", "Row 2. Point at the minus 96, then the expense column.", [
+   ("say", "Two. Mobile phone bill, ninety-six dollars, straight from your bank. Assets down, and it's an expense. You're ninety-six dollars worse off."),
  ]),
- ("1:15", "PAYING OFF THE CARD", "The credit card payoff row. Let both numbers show.", [
-   ("say", "And you paid off your credit card. Money left your account, so assets down — but the debt vanished, so liabilities down by the same amount. It <em>feels</em> like spending. It isn't. Your net worth didn't move."),
+ ("0:50", "3 &middot; SALARY", "Row 3.", [
+   ("say", "Three. Salary, two thousand, seven hundred and eighteen, into your bank. Assets up, and it's revenue."),
  ]),
- ("1:35", "YOUR FOUR ANSWERS", "Point at each boxed answer in turn.", [
-   ("say", "Your four answers: assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty."),
+ ("1:00", "4 &middot; CASINO WIN", "Row 4. Point at the revenue column.", [
+   ("say", "Four. Forty-eight dollars won at the casino. Assets up, and revenue — you didn't work for it, but you're better off."),
+ ]),
+ ("1:10", "5 &middot; TRAFFIC FINE", "Row 5.", [
+   ("say", "Five. Traffic fine, two hundred and eighty-four dollars. Assets down, and it's an expense."),
+ ]),
+ ("1:20", "6 &middot; PAYING OFF THE CARD", "Row 6. Let both minus figures sit on screen.", [
+   ("say", "Six. You pay off your credit card, five hundred and seventy. Money leaves your account, so assets down — but the debt goes too, so liabilities down by the same amount. It <em>feels</em> like spending. It isn't. Your net worth doesn't move."),
+ ]),
+ ("1:35", "7 &middot; CONCERT TICKETS", "Row 7. Point at the empty Expenses column beside it.", [
+   ("say", "Seven. Concert tickets on the card, a hundred and ninety-three. Assets up, liabilities up — same as the shoes. But the concert is in December. You haven't used them yet, so it isn't an expense."),
+ ]),
+
+ ("1:50", "YOUR FOUR ANSWERS", "Point at each boxed answer in turn.", [
+   ("say", "So your four answers. Assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty."),
    ("say", "And it balances — both sides come to two thousand, three hundred and eighty-six. That's how much better off April left you."),
  ]),
- ("1:55", "CLOSE &middot; SLOW DOWN", "Just your face.", [
-   ("say", "So your net worth is growing, Eva. The thing to watch is the gap between what you earn and what actually lands in your bank."),
+ ("2:10", "CLOSE &middot; SLOW DOWN", "Just your face.", [
+   ("say", "That's April, Eva. Your net worth is growing."),
  ]),
 ]
 
@@ -356,9 +369,9 @@ def build(beats):
 
 for fn, title, tag, accent, ink, secs, label, key, beats in [
   ("eva-prompter-march.html", "Eva's March Prompter", "MARCH &middot; EXERCISE 1",
-   "#5fc0a2", "#06231b", 170, "2:50", "pm.march", MARCH),
+   "#5fc0a2", "#06231b", 165, "2:45", "pm.march", MARCH),
   ("eva-prompter-april.html", "Eva's April Prompter", "APRIL &middot; EXERCISE 2",
-   "#6fb6dd", "#062231", 105, "1:45", "pm.april", APRIL),
+   "#6fb6dd", "#062231", 120, "2:00", "pm.april", APRIL),
 ]:
     body, words = build(beats)
     open("/home/user/My-computer-claude-code/"+fn, "w").write(TEMPLATE.format(

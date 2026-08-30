@@ -120,7 +120,7 @@ p.opt::before{
     <button id="mirror">Mirror</button>
     <button id="full">Full screen</button>
   </div>
-  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 1:45 target</span></div>
+  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 2:00 target</span></div>
 </div>
 <div id="progress"><div id="bar-fill"></div></div>
 
@@ -128,28 +128,39 @@ p.opt::before{
   <div id="viewport">
     <div id="track">
       <div class="tc">0:00 <span>OPEN</span></div>
-      <p class="cue">Switch to the April tab.</p>
-      <p class="say">Now April. Seven transactions, and what each one did to you. The tool is this equation.</p>
+      <p class="cue">Switch to the April tab. Show the list of seven.</p>
+      <p class="say">Now April. Seven transactions, in the order they happened. For each one I'll tell you what changed.</p>
       <div class="tc">0:08 <span>THE FOUR COLUMNS</span></div>
-      <p class="cue">Point at each heading as you name it.</p>
+      <p class="cue">Point at each column heading as you name it.</p>
       <p class="say">Four things can change. Assets, what you own. Liabilities, what you owe. Revenue, what leaves you better off. Expenses, what leaves you worse off. Every transaction changes two of them. Never one.</p>
-      <div class="tc">0:25 <span>THE EASY FOUR</span></div>
-      <p class="cue">Walk down the salary, casino, phone and fine rows.</p>
-      <p class="say">Four are simple. Salary in — assets up, revenue. Casino win — assets up, revenue, because you're better off even though you didn't work for it. Phone bill out — assets down, expense. Traffic fine, the same. Together, revenue up two thousand seven hundred and sixty-six, expenses up three hundred and eighty.</p>
-      <div class="tc">0:50 <span>SHOES AND TICKETS</span></div>
-      <p class="cue">The shoes row, then the tickets row.</p>
-      <p class="say">Then the credit card ones. Running shoes: you own the shoes, so assets up — but you owe the card, so liabilities up. They cancel. You're not worse off.</p>
-      <p class="say">Concert tickets, the same — but the concert is in December. You haven't used them yet, so it isn't an expense.</p>
-      <div class="tc">1:15 <span>PAYING OFF THE CARD</span></div>
-      <p class="cue">The credit card payoff row. Let both numbers show.</p>
-      <p class="say">And you paid off your credit card. Money left your account, so assets down — but the debt vanished, so liabilities down by the same amount. It <em>feels</em> like spending. It isn't. Your net worth didn't move.</p>
-      <div class="tc">1:35 <span>YOUR FOUR ANSWERS</span></div>
+      <div class="tc">0:25 <span>1 &middot; RUNNING SHOES</span></div>
+      <p class="cue">Row 1. Point at the +252 under Assets, then the +252 under Liabilities.</p>
+      <p class="say">One. Running shoes on the credit card, two hundred and fifty-two dollars. You own the shoes, so assets up. You owe the card, so liabilities up. They cancel — you're not worse off.</p>
+      <div class="tc">0:40 <span>2 &middot; PHONE BILL</span></div>
+      <p class="cue">Row 2. Point at the minus 96, then the expense column.</p>
+      <p class="say">Two. Mobile phone bill, ninety-six dollars, straight from your bank. Assets down, and it's an expense. You're ninety-six dollars worse off.</p>
+      <div class="tc">0:50 <span>3 &middot; SALARY</span></div>
+      <p class="cue">Row 3.</p>
+      <p class="say">Three. Salary, two thousand, seven hundred and eighteen, into your bank. Assets up, and it's revenue.</p>
+      <div class="tc">1:00 <span>4 &middot; CASINO WIN</span></div>
+      <p class="cue">Row 4. Point at the revenue column.</p>
+      <p class="say">Four. Forty-eight dollars won at the casino. Assets up, and revenue — you didn't work for it, but you're better off.</p>
+      <div class="tc">1:10 <span>5 &middot; TRAFFIC FINE</span></div>
+      <p class="cue">Row 5.</p>
+      <p class="say">Five. Traffic fine, two hundred and eighty-four dollars. Assets down, and it's an expense.</p>
+      <div class="tc">1:20 <span>6 &middot; PAYING OFF THE CARD</span></div>
+      <p class="cue">Row 6. Let both minus figures sit on screen.</p>
+      <p class="say">Six. You pay off your credit card, five hundred and seventy. Money leaves your account, so assets down — but the debt goes too, so liabilities down by the same amount. It <em>feels</em> like spending. It isn't. Your net worth doesn't move.</p>
+      <div class="tc">1:35 <span>7 &middot; CONCERT TICKETS</span></div>
+      <p class="cue">Row 7. Point at the empty Expenses column beside it.</p>
+      <p class="say">Seven. Concert tickets on the card, a hundred and ninety-three. Assets up, liabilities up — same as the shoes. But the concert is in December. You haven't used them yet, so it isn't an expense.</p>
+      <div class="tc">1:50 <span>YOUR FOUR ANSWERS</span></div>
       <p class="cue">Point at each boxed answer in turn.</p>
-      <p class="say">Your four answers: assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.</p>
+      <p class="say">So your four answers. Assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.</p>
       <p class="say">And it balances — both sides come to two thousand, three hundred and eighty-six. That's how much better off April left you.</p>
-      <div class="tc">1:55 <span>CLOSE &middot; SLOW DOWN</span></div>
+      <div class="tc">2:10 <span>CLOSE &middot; SLOW DOWN</span></div>
       <p class="cue">Just your face.</p>
-      <p class="say">So your net worth is growing, Eva. The thing to watch is the gap between what you earn and what actually lands in your bank.</p>
+      <p class="say">That's April, Eva. Your net worth is growing.</p>
       <div id="end">&mdash; end of script &mdash; hold still for two seconds before you stop recording &mdash;</div>
     </div>
   </div>
@@ -167,7 +178,7 @@ p.opt::before{
 
 <script>
 (function(){
-  var TARGET = 105;
+  var TARGET = 120;
   var KEY = 'pm.april';
   var track = document.getElementById('track');
   var viewport = document.getElementById('viewport');
