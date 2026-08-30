@@ -105,149 +105,126 @@ Empty bordered box directly under Net assets in the balance-sheet column — fil
 
 ---
 
-## How this is structured
+## What's in and what's out
 
-Left to right, one statement at a time. For every part you say two things: **what the category means**, then **where its highlighted total comes from**.
+**In:** a one-line definition of every category — revenue, expenses, net income, assets, liabilities, net assets, cash in, cash out — each followed by its highlighted total and where it comes from. Plus the gym on the credit card, the unpaid electricity, and the holiday deposit.
 
-Only the highlighted totals get spoken — line items stay on screen to point at. The three explained in detail are the ones that don't behave as expected: the gym on the credit card, the unpaid electricity, and the holiday deposit.
+**Out:** line-by-line figures, the equity cross-check, the profit-to-cash bridge, and anything that was explaining rather than telling.
 
-Total 6:50 (March 4:20 + April 2:30). Plan for a 10-minute presentation. To shorten, drop the optional paragraph and speed up slightly — not the definitions.
+**4:35 scripted** (March 2:50 + April 1:45) — 25 seconds of slack under your 5:00 limit.
 
 ---
 
-## Exercise 1 — March, the three statements (4:20)
+## Exercise 1 — March (2:50)
 
 ### 0:00 — OPEN
-*On screen: Just your face, then share the workbook.*
+*On screen: Share the workbook.*
 
-Hi Eva. I've taken everything you gave me for March and built three statements. I'll go through them one at a time, left to right, and for each one I'll tell you what it means and where its totals come from.
+Hi Eva. Three statements from your March numbers. I'll take them left to right, and tell you what each part means and where its total comes from.
 
-### 0:15 — STATEMENT 1 · WHAT IT IS
-*On screen: Point at the whole left-hand block.*
+### 0:10 — INCOME STATEMENT
+*On screen: Point at the whole left block.*
 
-First statement: the Income Statement. It answers one question — did you get richer or poorer during March? It has two halves. Revenue, and expenses.
+First, the Income Statement. It answers one question: did you get richer or poorer in March?
 
-### 0:25 — REVENUE
-*On screen: Point at the green Revenue heading, then the total.*
+### 0:15 — REVENUE
+*On screen: Point at Revenue, then its total.*
 
-Revenue is everything that came in and left you better off. Yours adds up to six thousand, one hundred and thirty dollars. That's your salary, your freelance tutoring, the dividends your ETF paid you, and the hundred-dollar Uber Eats gift card from your uncle.
+Revenue is everything that came in and left you better off. Six thousand, one hundred and thirty dollars — your salary, your tutoring, your ETF dividends, and the hundred-dollar Uber Eats gift card. The gift card counts even though no money arrived, because you're a hundred dollars better off.
 
-The gift card surprises people. You didn't work for it, and no money hit your bank. But you're a hundred dollars better off than you were, so it's revenue.
+### 0:35 — EXPENSES
+*On screen: Point at Expenses, then its total. Then the gym line, then electricity.*
 
-### 0:55 — EXPENSES
-*On screen: Point at the Expenses heading and total. Then rest on the gym line, then electricity.*
+Expenses are what it cost you to live. Three thousand and thirty-six dollars.
 
-Expenses are what it cost you to live for the month. Yours come to three thousand and thirty-six dollars — rent, groceries, the car, insurance, and so on.
+Two need explaining. Your gym went on the credit card — you haven't paid for it, but you used it in March. Your electricity bill hasn't even arrived — but you used the power in March. An expense counts when you *use* the thing, not when you pay for it.
 
-Two are worth explaining, because they're the ones people get wrong. Your gym membership went on your credit card, so you haven't paid a cent for it yet — but you used the gym in March, so it's a March expense. Your electricity bill hasn't even arrived. Same thing. You used the power in March, so it counts in March.
+### 1:00 — NET INCOME
+*On screen: Point at the green cell.*
 
-That's the rule: an expense counts when you *use* the thing, not when you pay for it.
+Revenue minus expenses is net income. Three thousand and ninety-four dollars. That's how much better off March made you.
 
-### 1:35 — NET INCOME
-*On screen: Point at the green Net Income cell.*
+### 1:10 — BALANCE SHEET
+*On screen: Move to the middle block.*
 
-Revenue minus expenses gives net income — this green cell. Three thousand and ninety-four dollars. That is how much better off March made you.
+Second, the Balance Sheet. Not the month — a photograph of one day, the 31st of March. Three parts: assets, liabilities, net assets.
 
-### 1:45 — STATEMENT 2 · WHAT IT IS
-*On screen: Move to the middle block. Point at the whole thing.*
+### 1:20 — ASSETS
+*On screen: Point at Assets, then its total, then the holiday deposit line.*
 
-Second statement: the Balance Sheet. This one isn't about the month at all. It's a photograph of a single day — the 31st of March. It has three parts. Assets, liabilities, and net assets.
+Assets are everything you own that has value. Fifty-nine thousand, eight hundred and thirty-one dollars — your ETF, your bank account, your car, your gear, your laptop. Plus the thousand-dollar holiday deposit, because you still own that trip. You just haven't taken it yet.
 
-### 1:55 — ASSETS
-*On screen: Point at the Assets heading, then the total.*
+### 1:40 — LIABILITIES
+*On screen: Point at Liabilities, then its total, then the electricity line.*
 
-Assets are everything you own that has value. Yours add up to fifty-nine thousand, eight hundred and thirty-one dollars — your ETF, your bank account, your car, your camping gear, your laptop.
+Liabilities are everything you owe. Two thousand, eight hundred and seventy-three dollars — your personal loan, your credit card, and that electricity bill. The electricity shows up twice: an expense because you used the power, a liability because you still owe the money.
 
-Two you might not expect. The thousand-dollar holiday deposit is an asset, because you still own that trip — you just haven't taken it yet. And the gift card, because you haven't spent it.
-
-### 2:25 — LIABILITIES
-*On screen: Point at the Liabilities heading, then the total. Rest on the electricity line.*
-
-Liabilities are the opposite. Everything you owe to somebody else. Yours come to two thousand, eight hundred and seventy-three dollars — your personal loan, your credit card balance, and that electricity bill.
-
-Notice the electricity turns up twice. It's an expense on the first statement because you used the power. It's a liability here because you still owe the money. That's normal — one thing, two effects.
-
-### 2:50 — NET ASSETS
+### 2:00 — NET ASSETS
 *On screen: Point at the Net assets box.*
 
-Net assets is simply assets minus liabilities. What you own, take away what you owe. Fifty-six thousand, nine hundred and fifty-eight dollars. That's your net worth — the one number that says how you're really doing.
+Net assets is assets minus liabilities. What you own, take away what you owe. Fifty-six thousand, nine hundred and fifty-eight dollars. That's your net worth.
 
-### 3:00 — THE CHECK
-*On screen: Point at the equity rows underneath — 53,864 plus 3,094.*
+### 2:10 — CASH FLOW
+*On screen: Move to the right block. Point at cash in, then cash out.*
 
-*(OPTIONAL — drop if short on time)* And underneath there's a check. You started March worth fifty-three thousand, eight hundred and sixty-four. Add the three thousand and ninety-four you earned during the month, and you land on exactly the same fifty-six, nine-five-eight. Two different routes to the same number, so I know it's right.
+Third, the Cash Flow Statement. Only real money moving in and out of your bank.
 
-### 3:15 — STATEMENT 3 · WHAT IT IS
-*On screen: Move to the right-hand block.*
+Cash in, six thousand and thirty — a hundred less than revenue, because the gift card was never cash. Cash out, four thousand, two hundred and seventy-eight. The gym and the electricity aren't in it at all, because no money moved.
 
-Third statement: the Cash Flow Statement. This one only cares about real money moving in and out of your bank account. Nothing else.
+### 2:35 — NET CASH FLOW
+*On screen: Point at the net figure, then the two bank balances.*
 
-### 3:25 — CASH IN AND CASH OUT
-*On screen: Point at the receipts total, then the payments total.*
+Your bank grew one thousand, seven hundred and fifty-two dollars. Eight thousand at the start, nine thousand seven fifty-two at the end.
 
-Cash in was six thousand and thirty. That's a hundred dollars less than your revenue, because the gift card was never cash.
+So March made you three thousand better off, but your bank only grew seventeen hundred. Profit and cash are not the same thing.
 
-Cash out was four thousand, two hundred and seventy-eight. And here's the interesting part. The gym and the electricity aren't in there at all, because no money actually moved. But the holiday deposit is, and so is the payment you made on February's credit card — real money left your account, even though neither one is a March expense.
-
-### 3:55 — NET CASH FLOW
-*On screen: Point at the net cash flow figure, then the two bank balances.*
-
-Cash in minus cash out: your bank grew one thousand, seven hundred and fifty-two dollars. From eight thousand at the start of March, to nine thousand, seven hundred and fifty-two at the end.
-
-So March made you three thousand better off, but your bank only grew seventeen hundred. Both are true. Profit and cash are not the same thing — and it's the cash that buys the apartment.
-
-### 4:15 — BRIDGE
+### 2:55 — BRIDGE
 *On screen: Back to your face.*
 
-That's March. Now let's look at April.
+That's March. Now April.
 
 ---
 
-## Exercise 2 — April, the seven transactions (2:30)
+## Exercise 2 — April (1:45)
 
 ### 0:00 — OPEN
 *On screen: Switch to the April tab.*
 
-Now April. This one works differently. Instead of building statements, we track seven transactions and see what each one did to you. The tool is this equation across the top.
+Now April. Seven transactions, and what each one did to you. The tool is this equation.
 
-### 0:12 — THE FOUR COLUMNS
-*On screen: Point at each column heading in turn as you name it.*
+### 0:08 — THE FOUR COLUMNS
+*On screen: Point at each heading as you name it.*
 
-Four things can change. Assets — what you own. Liabilities — what you owe. Revenue — what leaves you better off. Expenses — what leaves you worse off. And the rule is that every transaction changes two of them. Never just one.
+Four things can change. Assets, what you own. Liabilities, what you owe. Revenue, what leaves you better off. Expenses, what leaves you worse off. Every transaction changes two of them. Never one.
 
-### 0:32 — THE FOUR EASY ONES
-*On screen: Walk down the salary, casino, phone and fine rows as you say them.*
+### 0:25 — THE EASY FOUR
+*On screen: Walk down the salary, casino, phone and fine rows.*
 
-Four of the seven are straightforward. Your salary came in — assets up, and it's revenue. You won money at the casino — assets up again, and that's revenue too. You didn't work for it, but you're better off, so it counts. Your phone bill went out — assets down, and that's an expense. Your traffic fine, the same.
+Four are simple. Salary in — assets up, revenue. Casino win — assets up, revenue, because you're better off even though you didn't work for it. Phone bill out — assets down, expense. Traffic fine, the same. Together, revenue up two thousand seven hundred and sixty-six, expenses up three hundred and eighty.
 
-Between them, revenue went up two thousand, seven hundred and sixty-six dollars, and expenses went up three hundred and eighty.
+### 0:50 — SHOES AND TICKETS
+*On screen: The shoes row, then the tickets row.*
 
-### 1:05 — THE THREE THAT CATCH PEOPLE
-*On screen: The shoes row, then the tickets row, then the credit card row.*
+Then the credit card ones. Running shoes: you own the shoes, so assets up — but you owe the card, so liabilities up. They cancel. You're not worse off.
 
-The other three are the interesting ones. You bought running shoes on your credit card. You own the shoes now, so assets go up — but you owe the card the same amount, so liabilities go up too. They cancel out. You're not worse off.
+Concert tickets, the same — but the concert is in December. You haven't used them yet, so it isn't an expense.
 
-You bought concert tickets, also on the card. Same cancelling — but with an extra point. The concert is in December. You haven't used those tickets yet, so it isn't an expense. It becomes one the night you go.
+### 1:15 — PAYING OFF THE CARD
+*On screen: The credit card payoff row. Let both numbers show.*
 
-And you paid off your credit card bill. Money left your account, so assets go down — but the debt went away, so liabilities go down by exactly the same amount. It *feels* like spending. It isn't. Your net worth didn't move at all.
+And you paid off your credit card. Money left your account, so assets down — but the debt vanished, so liabilities down by the same amount. It *feels* like spending. It isn't. Your net worth didn't move.
 
-### 1:50 — YOUR FOUR ANSWERS
-*On screen: Point at each of the four boxed answers in turn.*
+### 1:35 — YOUR FOUR ANSWERS
+*On screen: Point at each boxed answer in turn.*
 
-So, your four answers. Assets up two thousand, two hundred and sixty-one. Liabilities actually down a hundred and twenty-five, because you paid off more than you charged. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.
+Your four answers: assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.
 
-And it balances. Assets minus liabilities is two thousand three hundred and eighty-six — and revenue minus expenses is the same two thousand three hundred and eighty-six. That's how I know nothing's been missed. April left you two thousand, three hundred and eighty-six dollars better off.
+And it balances — both sides come to two thousand, three hundred and eighty-six. That's how much better off April left you.
 
-### 2:20 — CLOSE · SLOW DOWN
+### 1:55 — CLOSE · SLOW DOWN
 *On screen: Just your face.*
 
-So that's where you stand, Eva. Your net worth is growing. The main thing to keep an eye on is the gap between what you earn and what actually lands in your bank.
-
----
-
-## Then: the week 5 demonstration
-
-Worked live in Excel, narrating as you go. No script — say what you're doing and why. Minor errors are explicitly acceptable.
+So your net worth is growing, Eva. The thing to watch is the gap between what you earn and what actually lands in your bank.
 
 ---
 

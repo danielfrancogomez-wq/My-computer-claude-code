@@ -120,7 +120,7 @@ p.opt::before{
     <button id="mirror">Mirror</button>
     <button id="full">Full screen</button>
   </div>
-  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 2:30 target</span></div>
+  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 1:45 target</span></div>
 </div>
 <div id="progress"><div id="bar-fill"></div></div>
 
@@ -129,26 +129,27 @@ p.opt::before{
     <div id="track">
       <div class="tc">0:00 <span>OPEN</span></div>
       <p class="cue">Switch to the April tab.</p>
-      <p class="say">Now April. This one works differently. Instead of building statements, we track seven transactions and see what each one did to you. The tool is this equation across the top.</p>
-      <div class="tc">0:12 <span>THE FOUR COLUMNS</span></div>
-      <p class="cue">Point at each column heading in turn as you name it.</p>
-      <p class="say">Four things can change. Assets — what you own. Liabilities — what you owe. Revenue — what leaves you better off. Expenses — what leaves you worse off. And the rule is that every transaction changes two of them. Never just one.</p>
-      <div class="tc">0:32 <span>THE FOUR EASY ONES</span></div>
-      <p class="cue">Walk down the salary, casino, phone and fine rows as you say them.</p>
-      <p class="say">Four of the seven are straightforward. Your salary came in — assets up, and it's revenue. You won money at the casino — assets up again, and that's revenue too. You didn't work for it, but you're better off, so it counts. Your phone bill went out — assets down, and that's an expense. Your traffic fine, the same.</p>
-      <p class="say">Between them, revenue went up two thousand, seven hundred and sixty-six dollars, and expenses went up three hundred and eighty.</p>
-      <div class="tc">1:05 <span>THE THREE THAT CATCH PEOPLE</span></div>
-      <p class="cue">The shoes row, then the tickets row, then the credit card row.</p>
-      <p class="say">The other three are the interesting ones. You bought running shoes on your credit card. You own the shoes now, so assets go up — but you owe the card the same amount, so liabilities go up too. They cancel out. You're not worse off.</p>
-      <p class="say">You bought concert tickets, also on the card. Same cancelling — but with an extra point. The concert is in December. You haven't used those tickets yet, so it isn't an expense. It becomes one the night you go.</p>
-      <p class="say">And you paid off your credit card bill. Money left your account, so assets go down — but the debt went away, so liabilities go down by exactly the same amount. It <em>feels</em> like spending. It isn't. Your net worth didn't move at all.</p>
-      <div class="tc">1:50 <span>YOUR FOUR ANSWERS</span></div>
-      <p class="cue">Point at each of the four boxed answers in turn.</p>
-      <p class="say">So, your four answers. Assets up two thousand, two hundred and sixty-one. Liabilities actually down a hundred and twenty-five, because you paid off more than you charged. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.</p>
-      <p class="say">And it balances. Assets minus liabilities is two thousand three hundred and eighty-six — and revenue minus expenses is the same two thousand three hundred and eighty-six. That's how I know nothing's been missed. April left you two thousand, three hundred and eighty-six dollars better off.</p>
-      <div class="tc">2:20 <span>CLOSE &middot; SLOW DOWN</span></div>
+      <p class="say">Now April. Seven transactions, and what each one did to you. The tool is this equation.</p>
+      <div class="tc">0:08 <span>THE FOUR COLUMNS</span></div>
+      <p class="cue">Point at each heading as you name it.</p>
+      <p class="say">Four things can change. Assets, what you own. Liabilities, what you owe. Revenue, what leaves you better off. Expenses, what leaves you worse off. Every transaction changes two of them. Never one.</p>
+      <div class="tc">0:25 <span>THE EASY FOUR</span></div>
+      <p class="cue">Walk down the salary, casino, phone and fine rows.</p>
+      <p class="say">Four are simple. Salary in — assets up, revenue. Casino win — assets up, revenue, because you're better off even though you didn't work for it. Phone bill out — assets down, expense. Traffic fine, the same. Together, revenue up two thousand seven hundred and sixty-six, expenses up three hundred and eighty.</p>
+      <div class="tc">0:50 <span>SHOES AND TICKETS</span></div>
+      <p class="cue">The shoes row, then the tickets row.</p>
+      <p class="say">Then the credit card ones. Running shoes: you own the shoes, so assets up — but you owe the card, so liabilities up. They cancel. You're not worse off.</p>
+      <p class="say">Concert tickets, the same — but the concert is in December. You haven't used them yet, so it isn't an expense.</p>
+      <div class="tc">1:15 <span>PAYING OFF THE CARD</span></div>
+      <p class="cue">The credit card payoff row. Let both numbers show.</p>
+      <p class="say">And you paid off your credit card. Money left your account, so assets down — but the debt vanished, so liabilities down by the same amount. It <em>feels</em> like spending. It isn't. Your net worth didn't move.</p>
+      <div class="tc">1:35 <span>YOUR FOUR ANSWERS</span></div>
+      <p class="cue">Point at each boxed answer in turn.</p>
+      <p class="say">Your four answers: assets up two thousand, two hundred and sixty-one. Liabilities down a hundred and twenty-five. Revenue up two thousand, seven hundred and sixty-six. Expenses up three hundred and eighty.</p>
+      <p class="say">And it balances — both sides come to two thousand, three hundred and eighty-six. That's how much better off April left you.</p>
+      <div class="tc">1:55 <span>CLOSE &middot; SLOW DOWN</span></div>
       <p class="cue">Just your face.</p>
-      <p class="say">So that's where you stand, Eva. Your net worth is growing. The main thing to keep an eye on is the gap between what you earn and what actually lands in your bank.</p>
+      <p class="say">So your net worth is growing, Eva. The thing to watch is the gap between what you earn and what actually lands in your bank.</p>
       <div id="end">&mdash; end of script &mdash; hold still for two seconds before you stop recording &mdash;</div>
     </div>
   </div>
@@ -166,7 +167,7 @@ p.opt::before{
 
 <script>
 (function(){
-  var TARGET = 150;
+  var TARGET = 105;
   var KEY = 'pm.april';
   var track = document.getElementById('track');
   var viewport = document.getElementById('viewport');
