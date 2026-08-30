@@ -273,57 +273,56 @@ p.opt::before{{
 """
 
 MARCH = [
- ("0:00", "OPEN", "On screen: the March brief, or just your face.", [
-   ("say", "Hi Eva. Thanks for sending your numbers through — I've turned them into a proper set of financial statements for March. In the next three minutes you'll know what you earned, what you're worth, and where your cash actually went."),
+ ("0:00", "OPEN", "Just your face. Don't share the sheet yet.", [
+   ("say", "Hi Eva. You asked me where you actually stand. I've turned your March numbers into three statements — but rather than read them out to you, I want to show you the three ideas behind them. Once you've got those, the numbers look after themselves."),
  ]),
- ("0:15", "THE THREE QUESTIONS", "On screen: zoom out so all three blocks are visible.", [
-   ("say", "I've built three statements, and each one answers a different question. The Income Statement: did I get richer or poorer this month? The Balance Sheet: what am I worth right now? The Cash Flow Statement: where did the money in my bank actually go?"),
+ ("0:20", "THE THREE QUESTIONS", "Share the workbook. Zoom out so all three blocks are visible. Don't point at anything yet.", [
+   ("say", "Each statement answers one question. Did I get richer or poorer this month? What am I worth right now? And where did the money in my bank actually go? They sound like the same question. They're not — and that's the whole lesson."),
  ]),
- ("0:35", "INCOME STATEMENT", "On screen: left block. Revenue → Expenses → the green Net Income cell.", [
-   ("say", "Start on the left. Money in for March: six thousand, one hundred and thirty dollars. Salary $5,200, freelance tutoring $480, $350 of dividends from your ETF, and the $100 Uber Eats gift card from Uncle Wayne. That gift card counts as income — you didn't work for it, but you're a hundred dollars better off."),
-   ("opt", "Money out was three thousand and thirty-six dollars — rent $917, groceries $661, vehicle costs $480, dining out $320, and six smaller items."),
-   ("say", "Two are worth a pause. The gym went on your credit card, and the electricity hasn't been paid — but both are still March expenses, because you used them in March. An expense counts when you <em>use</em> the thing, not when the money leaves."),
-   ("say", "And notice what's missing: the $1,000 holiday deposit. That isn't an expense — you haven't taken the holiday. That money is still yours, just parked somewhere else."),
-   ("say", "Money in, minus money out: your net income for March was three thousand and ninety-four dollars."),
+ ("0:35", "IDEA 1 &middot; INCOME ISN'T ONLY YOUR PAY", "Point at the Revenue block. Rest on the gift card line as you say it.", [
+   ("say", "First idea. Income is anything that leaves you better off — you don't have to work for it. Your salary is income, obviously. But so are the dividends your ETF paid you. And so is that Uber Eats gift card from Uncle Wayne. You didn't earn it, no money came in, but you're a hundred dollars better off than you were. So it counts."),
  ]),
- ("1:35", "BALANCE SHEET", "On screen: middle block. Assets → Liabilities → Net assets → Equity.", [
-   ("say", "Now the middle column — the Balance Sheet. It's a photograph of a single day: the 31st of March."),
-   ("say", "Everything you own: fifty-nine thousand, eight hundred and thirty-one dollars. The ETF is the big one at $34,000, then the bank at $9,752 and the car at $7,700 — plus the holiday deposit and the gift card, because you're still holding both."),
-   ("say", "Everything you owe: two thousand, eight hundred and seventy-three. Personal loan $2,200, credit card $570, unpaid electricity $103."),
-   ("say", "Own minus owe is your net worth: fifty-six thousand, nine hundred and fifty-eight dollars."),
-   ("say", "And here's the check I like. You started March worth $53,864. Add the $3,094 you made, and you land exactly on $56,958. Two completely different routes to the same number."),
+ ("1:00", "IDEA 2 &middot; AN EXPENSE IS WHEN YOU USE IT", "Point at the gym line, then the electricity line.", [
+   ("say", "Second idea, and this is the one people trip on. An expense counts when you <em>use</em> the thing, not when you pay for it. Your gym membership went on the credit card — you haven't paid a cent yet, but you used the gym in March, so it's a March expense. Same with the electricity bill sitting unpaid on your bench. You used the power. It counts."),
  ]),
- ("2:15", "CASH FLOW · KEY INSIGHT", "On screen: right block. Net cash flow $1,752, then $8,000 → $9,752.", [
-   ("say", "Third column: cash. Six thousand and thirty came in, four thousand two hundred and seventy-eight went out, so your bank grew $1,752 — from $8,000 to $9,752."),
-   ("say", "Cash in is $100 lower than income, because the gift card never touched your bank. And the $1,000 deposit and the $410 you paid off February's credit card were cash going out that weren't expenses at all."),
-   ("say", "So you made $3,094 but your bank only grew $1,752. Here's the bridge: start at $3,094, take out the $100 gift card, add back the $168 you expensed but didn't pay, then subtract the $1,410 you paid but didn't expense. One thousand, seven hundred and fifty-two. Exactly."),
-   ("say", "That gap is the thing to watch, Eva. Profit is not the same as cash — and it's cash that buys the apartment."),
+ ("1:25", "IDEA 3 &middot; NOT EVERYTHING YOU PAY FOR IS AN EXPENSE", "Point at the holiday deposit sitting in Assets, not in Expenses.", [
+   ("say", "Third idea — the flip side. You paid a thousand dollars towards your holiday. That money left your account, but it isn't an expense, because you haven't taken the holiday. You still own that trip. It's just your money sitting in a different pocket. Same with the payment you made on February's credit card. You weren't spending. You were clearing an old bill."),
  ]),
- ("2:50", "CLOSE · SLOW DOWN", "On screen: back to the balance sheet, or just your face.", [
-   ("say", "So — March made you $3,094 better off, you're worth $56,958, and you owe $2,873. In the next video I'll show you what April did to those numbers."),
+ ("1:50", "THE ANSWERS &amp; HOW I CHECKED THEM", "Point at Net Income, then at Net assets, then the equity roll-forward underneath.", [
+   ("say", "Put those three ideas together, and March left you three thousand and ninety-four dollars better off. On the 31st, everything you own comes to just under sixty thousand, everything you owe is under three thousand — so your net worth is fifty-six thousand, nine hundred and fifty-eight."),
+   ("say", "And here's how I know that's right. You started the month worth fifty-three thousand, eight hundred and sixty-four. Add the three thousand you made. You land exactly on fifty-six, nine-five-eight. Two completely different routes, same answer. That's the check."),
+ ]),
+ ("2:20", "THE PUNCHLINE &middot; PROFIT ISN'T CASH", "Move to the cash flow block. Point at the bank balance moving 8,000 to 9,752.", [
+   ("say", "But here's the part that matters most to you. You made three thousand dollars — and your bank account only grew about seventeen hundred. Why? Because of everything I just said. The gift card was income that never hit your bank. The holiday deposit and the old credit card bill were cash going out that weren't expenses at all."),
+   ("say", "Profit and cash are two different things, Eva. And it's the cash that buys the apartment."),
+ ]),
+ ("2:45", "BRIDGE", "Back to your face, or leave the sheet up.", [
+   ("say", "That's March. Now let's see what April did to those numbers."),
  ]),
 ]
 
 APRIL = [
- ("0:00", "OPEN", "On screen: the April transaction list, or just your face.", [
-   ("say", "Hi Eva. Last time we worked out you were worth $56,958 at the end of March. Now let's look at the seven April transactions you sent me, and what each one actually did to you."),
+ ("0:00", "OPEN", "Switch to the April tab. Show the seven transactions.", [
+   ("say", "Now April. You sent me seven things that happened, and asked what they did to you. I'm not going to read all seven out — I want to show you the three traps hiding in them, because they're the ones that catch everybody."),
  ]),
- ("0:12", "THE RULE", "On screen: the equation header row — ASSETS − LIABILITIES = OPENING EQUITY + (REVENUE − EXPENSES).", [
-   ("say", "I've run them through the accounting equation: what you own, minus what you owe, equals your net worth — and your net worth only moves through income and expenses. The rule to hold on to is that every transaction does two things, never one."),
+ ("0:15", "THE RULE", "Point at the equation header across the top.", [
+   ("say", "The rule underneath all of it: every transaction does two things, never one. Something you own changes, or something you owe changes. And your net worth only moves if income or an expense is involved."),
  ]),
- ("0:30", "THE EASY FOUR", "On screen: walk down the salary, casino, phone and fine rows.", [
-   ("say", "Easy ones first. Your salary, $2,718, and the $48 you won at the casino — cash in, and both count as income. Income doesn't have to come from work. Your phone bill $96 and the traffic fine $284 — cash out, and genuinely gone. That's $380 of expenses."),
+ ("0:35", "TRAP 1 &middot; BUYING ON CREDIT", "Point at the running shoes row — the +252 and the +252.", [
+   ("say", "Trap one. You bought running shoes on the credit card. You own a pair of shoes you didn't have before, and you owe the card that much more. Two things moved, they cancel out, and your net worth didn't budge. Buying on credit doesn't make you poorer. Using the thing does."),
  ]),
- ("0:50", "THE THREE THAT CATCH PEOPLE", "On screen: the shoes row, then the tickets row, then the credit card row.", [
-   ("say", "Three are more interesting. The running shoes, $252 on the credit card: you own $252 more, and you owe $252 more. Your net worth didn't move at all."),
-   ("say", "The concert tickets, $193 — the concert isn't until December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in."),
-   ("say", "And paying off the credit card, $570. This is the one people get wrong. It <em>feels</em> like spending, but $570 left the bank and $570 of debt vanished at the same moment. You are exactly as well off as you were a minute before."),
+ ("0:55", "TRAP 2 &middot; PAYING OFF DEBT", "Point at the credit card payoff row. Let the two numbers cancel visibly.", [
+   ("say", "Trap two, and this is the big one. You paid off your credit card. It <em>feels</em> like spending — a chunk of money left your account. But the debt disappeared at the same moment. You're not a dollar worse off than you were a minute before. That isn't an expense. That's just moving money between pockets."),
  ]),
- ("1:25", "THE TOTALS", "On screen: the four boxed answers, then the balance check.", [
-   ("say", "April in total: assets up $2,261, liabilities down $125, revenue up $2,766, expenses up $380. And it balances — $2,261 plus $125 is $2,386, and $2,766 minus $380 is also $2,386. Your net worth grew two thousand, three hundred and eighty-six dollars in April."),
+ ("1:15", "TRAP 3 &middot; PAYING EARLY", "Point at the concert tickets row, then at the empty Expenses column beside it.", [
+   ("say", "Trap three. You bought concert tickets — but the concert is in December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in."),
  ]),
- ("1:45", "CLOSE · SLOW DOWN", "On screen: just your face.", [
-   ("say", "So April added $2,386, and you're now worth just over $59,300. The lesson: paying off debt and buying December tickets feel like spending, but they aren't — you're moving money between pockets, not losing it. The number that gets you the apartment is cash. Call me any time."),
+ ("1:30", "THE ODD ONE &amp; YOUR ANSWERS", "Point at the casino row, then at the four boxed answers.", [
+   ("say", "One more, quickly. You won money at the casino. Didn't work for it, but you're better off — so it's income. Same logic as the gift card."),
+   ("say", "Those four boxes are your answers. Assets up two thousand two hundred and sixty-one, liabilities actually down, revenue up twenty-seven sixty-six, and expenses only three hundred and eighty. Net result: about two thousand four hundred dollars better off than you were on the first of April. And the equation balances, which is how I know nothing's been dropped."),
+ ]),
+ ("1:55", "CLOSE &middot; SLOW DOWN", "Just your face.", [
+   ("say", "So the thing to hold on to, Eva: what feels like spending often isn't, and what feels like nothing sometimes is. Watch your net worth, and watch your cash. Those two tell you everything."),
  ]),
 ]
 
@@ -340,9 +339,9 @@ def build(beats):
 
 for fn, title, tag, accent, ink, secs, label, key, beats in [
   ("eva-prompter-march.html", "Eva's March Prompter", "MARCH &middot; EXERCISE 1",
-   "#5fc0a2", "#06231b", 200, "3:20", "pm.march", MARCH),
+   "#5fc0a2", "#06231b", 170, "2:50", "pm.march", MARCH),
   ("eva-prompter-april.html", "Eva's April Prompter", "APRIL &middot; EXERCISE 2",
-   "#6fb6dd", "#062231", 125, "2:05", "pm.april", APRIL),
+   "#6fb6dd", "#062231", 128, "2:10", "pm.april", APRIL),
 ]:
     body, words = build(beats)
     open("/home/user/My-computer-claude-code/"+fn, "w").write(TEMPLATE.format(

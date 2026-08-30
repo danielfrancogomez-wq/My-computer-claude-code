@@ -105,72 +105,108 @@ Empty bordered box directly under Net assets in the balance-sheet column — fil
 
 ---
 
-## 0:00 — Open
-*On screen: the March brief.*
+## The brief
 
-Hi Eva. Thanks for sending your numbers through — I've turned them into a proper set of financial statements. In the next five minutes you'll know three things: what you earned in March, what you're actually worth, and where your cash went. Then we'll look at April.
+7–10 minutes. Roughly half explaining weeks 2 & 3, half demonstrating the week 5 problem live in Excel. Week 4 not required. Face and workbook both visible.
 
-## 0:20 — The three questions
-*On screen: all three statement columns.*
+Key line: **"You should not talk through all figures, but should focus on the key aspects of the problem that Eva needs to understand."** This script names about a dozen numbers instead of forty. Everything else is on screen — point at it, don't read it.
 
-I've built three statements, and each one answers a different question. The Income Statement asks: did I get richer or poorer this month? The Balance Sheet asks: what am I worth right now? The Cash Flow Statement asks: where did the money in my bank actually go? Three different questions — and, importantly, three different answers.
+Totals 5:00 across both exercises, which suits a 10-minute presentation.
 
-## 0:45 — Income statement
-*On screen: left column. Highlight Revenue, then Expenses, then the green Net Income cell.*
+---
 
-Start on the left. Money in for March: **$6,130**. Salary $5,200, freelance tutoring $480, $350 of dividends from your ETF, and the $100 Uber Eats gift card from Uncle Wayne. That gift card counts as income — you didn't work for it, but you're a hundred dollars better off than you were.
+## Exercise 1 — March, the three statements (2:50)
 
-*(CUT IF LONG)* Money out: **$3,036**. Rent $917, groceries $661, vehicle costs $480, dining out $320, insurance $170, streaming $140, electricity $103, charity $95, phone $85, gym $65.
+### 0:00 — OPEN
+*On screen: Just your face. Don't share the sheet yet.*
 
-Two of those are worth a pause. The gym went on your credit card, and the electricity bill hasn't been paid yet — but both are still March expenses, because you used the gym and you used the power in March. An expense counts when you *use* the thing, not when the money leaves.
+Hi Eva. You asked me where you actually stand. I've turned your March numbers into three statements — but rather than read them out to you, I want to show you the three ideas behind them. Once you've got those, the numbers look after themselves.
 
-And notice what's missing from that list: the $1,000 holiday deposit. That isn't an expense — you haven't taken the holiday. That money is still yours, just parked somewhere else.
+### 0:20 — THE THREE QUESTIONS
+*On screen: Share the workbook. Zoom out so all three blocks are visible. Don't point at anything yet.*
 
-Money in, minus money out: your net income for March was **$3,094**. You finished the month $3,094 better off than you started it.
+Each statement answers one question. Did I get richer or poorer this month? What am I worth right now? And where did the money in my bank actually go? They sound like the same question. They're not — and that's the whole lesson.
 
-## 1:50 — Balance sheet
-*On screen: middle column. Assets total, Liabilities, then Net assets and Equity.*
+### 0:35 — IDEA 1 · INCOME ISN'T ONLY YOUR PAY
+*On screen: Point at the Revenue block. Rest on the gift card line as you say it.*
 
-Now the middle column — the Balance Sheet. Think of this one as a photograph of a single day: the 31st of March.
+First idea. Income is anything that leaves you better off — you don't have to work for it. Your salary is income, obviously. But so are the dividends your ETF paid you. And so is that Uber Eats gift card from Uncle Wayne. You didn't earn it, no money came in, but you're a hundred dollars better off than you were. So it counts.
 
-Everything you own comes to **$59,831**. Your ETF is the big one at $34,000, then the bank account at $9,752, the car at $7,700, camping and sports gear $4,900 and the laptop $2,379 — plus the holiday deposit and the gift card, because you're still holding both of those.
+### 1:00 — IDEA 2 · AN EXPENSE IS WHEN YOU USE IT
+*On screen: Point at the gym line, then the electricity line.*
 
-Everything you owe comes to **$2,873**. The personal loan $2,200, the credit card $570, and that unpaid electricity $103.
+Second idea, and this is the one people trip on. An expense counts when you *use* the thing, not when you pay for it. Your gym membership went on the credit card — you haven't paid a cent yet, but you used the gym in March, so it's a March expense. Same with the electricity bill sitting unpaid on your bench. You used the power. It counts.
 
-Own minus owe is your net worth: **$56,958**.
+### 1:25 — IDEA 3 · NOT EVERYTHING YOU PAY FOR IS AN EXPENSE
+*On screen: Point at the holiday deposit sitting in Assets, not in Expenses.*
 
-And here's the check I like. You started March worth $53,864. Add the $3,094 you made during the month, and you land exactly on $56,958. Two completely different routes to the same number — that's how I know these statements hang together.
+Third idea — the flip side. You paid a thousand dollars towards your holiday. That money left your account, but it isn't an expense, because you haven't taken the holiday. You still own that trip. It's just your money sitting in a different pocket. Same with the payment you made on February's credit card. You weren't spending. You were clearing an old bill.
 
-## 2:35 — Cash flow (the key insight)
-*On screen: right column. Point at Net cash flow $1,752, then $8,000 → $9,752.*
+### 1:50 — THE ANSWERS & HOW I CHECKED THEM
+*On screen: Point at Net Income, then at Net assets, then the equity roll-forward underneath.*
 
-Third column: cash. **$6,030** came in, **$4,278** went out, so your bank account grew **$1,752** — from $8,000 up to $9,752.
+Put those three ideas together, and March left you three thousand and ninety-four dollars better off. On the 31st, everything you own comes to just under sixty thousand, everything you owe is under three thousand — so your net worth is fifty-six thousand, nine hundred and fifty-eight.
 
-Cash in is $100 lower than income, because the gift card never touched your bank account. And on the way out, the gym and the electricity were expenses with no cash moving, while the $1,000 holiday deposit and the $410 you paid off February's credit card were cash going out that weren't expenses at all — that $410 was settling last month's spending, not this month's.
+And here's how I know that's right. You started the month worth fifty-three thousand, eight hundred and sixty-four. Add the three thousand you made. You land exactly on fifty-six, nine-five-eight. Two completely different routes, same answer. That's the check.
 
-So you made $3,094, but your bank only grew $1,752. Here's the bridge between them: start at $3,094, take out the $100 gift card, add back the $168 you expensed but didn't pay, then subtract the $1,410 you paid but didn't expense. $1,752. Exactly.
+### 2:20 — THE PUNCHLINE · PROFIT ISN'T CASH
+*On screen: Move to the cash flow block. Point at the bank balance moving 8,000 to 9,752.*
 
-That gap is the thing to watch, Eva. Profit is not the same as cash — and it's cash that buys the apartment.
+But here's the part that matters most to you. You made three thousand dollars — and your bank account only grew about seventeen hundred. Why? Because of everything I just said. The gift card was income that never hit your bank. The holiday deposit and the old credit card bill were cash going out that weren't expenses at all.
 
-## 3:20 — April, the accounting equation
-*On screen: switch tabs. Equation header row, then walk down the yellow rows.*
+Profit and cash are two different things, Eva. And it's the cash that buys the apartment.
 
-Now April. You gave me seven transactions and asked what each one did to you. I've run them through the accounting equation: what you own, minus what you owe, equals your net worth — and your net worth only moves through income and expenses. The rule is that every transaction does two things, never one.
+### 2:45 — BRIDGE
+*On screen: Back to your face, or leave the sheet up.*
 
-Easy ones first. Your salary, $2,718, and the $48 you won at the casino — cash in, and both count as income. Income doesn't have to come from work. Your phone bill $96 and the traffic fine $284 — cash out, and genuinely gone. That's $380 of expenses.
+That's March. Now let's see what April did to those numbers.
 
-Three are more interesting. The running shoes, $252 on the credit card: you own $252 more, and you owe $252 more. Your net worth didn't move at all.
+---
 
-The concert tickets, $193 — the concert isn't until December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in.
+## Exercise 2 — April, the seven transactions (2:10)
 
-And paying off the credit card, $570. This is the one people get wrong. It *feels* like spending, but $570 left the bank and $570 of debt vanished at the same moment. You are exactly as well off as you were a minute before.
+### 0:00 — OPEN
+*On screen: Switch to the April tab. Show the seven transactions.*
 
-April in total: assets up **$2,261**, liabilities down **$125**, revenue up **$2,766**, expenses up **$380**. And it balances — $2,261 plus $125 is $2,386, and $2,766 minus $380 is also $2,386. Your net worth grew $2,386 in April.
+Now April. You sent me seven things that happened, and asked what they did to you. I'm not going to read all seven out — I want to show you the three traps hiding in them, because they're the ones that catch everybody.
 
-## 4:35 — Close
-*On screen: back to the balance sheet, or just your face. Slow down.*
+### 0:15 — THE RULE
+*On screen: Point at the equation header across the top.*
 
-So — three things to take away. One: you're worth $56,958, and April added about another $2,400 to that. Two: paying off debt and putting down deposits *feel* like spending, but they aren't — you're moving money between pockets, not losing it. Three: the number that gets you the apartment is cash, and yours grew $1,752 in March. Keep that gap open and you're on track. I'll send this through — call me with any questions.
+The rule underneath all of it: every transaction does two things, never one. Something you own changes, or something you owe changes. And your net worth only moves if income or an expense is involved.
+
+### 0:35 — TRAP 1 · BUYING ON CREDIT
+*On screen: Point at the running shoes row — the +252 and the +252.*
+
+Trap one. You bought running shoes on the credit card. You own a pair of shoes you didn't have before, and you owe the card that much more. Two things moved, they cancel out, and your net worth didn't budge. Buying on credit doesn't make you poorer. Using the thing does.
+
+### 0:55 — TRAP 2 · PAYING OFF DEBT
+*On screen: Point at the credit card payoff row. Let the two numbers cancel visibly.*
+
+Trap two, and this is the big one. You paid off your credit card. It *feels* like spending — a chunk of money left your account. But the debt disappeared at the same moment. You're not a dollar worse off than you were a minute before. That isn't an expense. That's just moving money between pockets.
+
+### 1:15 — TRAP 3 · PAYING EARLY
+*On screen: Point at the concert tickets row, then at the empty Expenses column beside it.*
+
+Trap three. You bought concert tickets — but the concert is in December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in.
+
+### 1:30 — THE ODD ONE & YOUR ANSWERS
+*On screen: Point at the casino row, then at the four boxed answers.*
+
+One more, quickly. You won money at the casino. Didn't work for it, but you're better off — so it's income. Same logic as the gift card.
+
+Those four boxes are your answers. Assets up two thousand two hundred and sixty-one, liabilities actually down, revenue up twenty-seven sixty-six, and expenses only three hundred and eighty. Net result: about two thousand four hundred dollars better off than you were on the first of April. And the equation balances, which is how I know nothing's been dropped.
+
+### 1:55 — CLOSE · SLOW DOWN
+*On screen: Just your face.*
+
+So the thing to hold on to, Eva: what feels like spending often isn't, and what feels like nothing sometimes is. Watch your net worth, and watch your cash. Those two tell you everything.
+
+---
+
+## Then: the week 5 demonstration
+
+The other half is the week 5 problem worked live in Excel, narrating as you go. No script — just say what you're doing and why. Minor errors are explicitly acceptable, so don't restart if you fumble a formula.
 
 ---
 

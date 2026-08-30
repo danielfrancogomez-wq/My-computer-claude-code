@@ -120,7 +120,7 @@ p.opt::before{
     <button id="mirror">Mirror</button>
     <button id="full">Full screen</button>
   </div>
-  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 2:05 target</span></div>
+  <div id="clock"><span id="elapsed">0:00</span><span id="target">/ 2:10 target</span></div>
 </div>
 <div id="progress"><div id="bar-fill"></div></div>
 
@@ -128,25 +128,27 @@ p.opt::before{
   <div id="viewport">
     <div id="track">
       <div class="tc">0:00 <span>OPEN</span></div>
-      <p class="cue">On screen: the April transaction list, or just your face.</p>
-      <p class="say">Hi Eva. Last time we worked out you were worth $56,958 at the end of March. Now let's look at the seven April transactions you sent me, and what each one actually did to you.</p>
-      <div class="tc">0:12 <span>THE RULE</span></div>
-      <p class="cue">On screen: the equation header row — ASSETS − LIABILITIES = OPENING EQUITY + (REVENUE − EXPENSES).</p>
-      <p class="say">I've run them through the accounting equation: what you own, minus what you owe, equals your net worth — and your net worth only moves through income and expenses. The rule to hold on to is that every transaction does two things, never one.</p>
-      <div class="tc">0:30 <span>THE EASY FOUR</span></div>
-      <p class="cue">On screen: walk down the salary, casino, phone and fine rows.</p>
-      <p class="say">Easy ones first. Your salary, $2,718, and the $48 you won at the casino — cash in, and both count as income. Income doesn't have to come from work. Your phone bill $96 and the traffic fine $284 — cash out, and genuinely gone. That's $380 of expenses.</p>
-      <div class="tc">0:50 <span>THE THREE THAT CATCH PEOPLE</span></div>
-      <p class="cue">On screen: the shoes row, then the tickets row, then the credit card row.</p>
-      <p class="say">Three are more interesting. The running shoes, $252 on the credit card: you own $252 more, and you owe $252 more. Your net worth didn't move at all.</p>
-      <p class="say">The concert tickets, $193 — the concert isn't until December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in.</p>
-      <p class="say">And paying off the credit card, $570. This is the one people get wrong. It <em>feels</em> like spending, but $570 left the bank and $570 of debt vanished at the same moment. You are exactly as well off as you were a minute before.</p>
-      <div class="tc">1:25 <span>THE TOTALS</span></div>
-      <p class="cue">On screen: the four boxed answers, then the balance check.</p>
-      <p class="say">April in total: assets up $2,261, liabilities down $125, revenue up $2,766, expenses up $380. And it balances — $2,261 plus $125 is $2,386, and $2,766 minus $380 is also $2,386. Your net worth grew two thousand, three hundred and eighty-six dollars in April.</p>
-      <div class="tc">1:45 <span>CLOSE · SLOW DOWN</span></div>
-      <p class="cue">On screen: just your face.</p>
-      <p class="say">So April added $2,386, and you're now worth just over $59,300. The lesson: paying off debt and buying December tickets feel like spending, but they aren't — you're moving money between pockets, not losing it. The number that gets you the apartment is cash. Call me any time.</p>
+      <p class="cue">Switch to the April tab. Show the seven transactions.</p>
+      <p class="say">Now April. You sent me seven things that happened, and asked what they did to you. I'm not going to read all seven out — I want to show you the three traps hiding in them, because they're the ones that catch everybody.</p>
+      <div class="tc">0:15 <span>THE RULE</span></div>
+      <p class="cue">Point at the equation header across the top.</p>
+      <p class="say">The rule underneath all of it: every transaction does two things, never one. Something you own changes, or something you owe changes. And your net worth only moves if income or an expense is involved.</p>
+      <div class="tc">0:35 <span>TRAP 1 &middot; BUYING ON CREDIT</span></div>
+      <p class="cue">Point at the running shoes row — the +252 and the +252.</p>
+      <p class="say">Trap one. You bought running shoes on the credit card. You own a pair of shoes you didn't have before, and you owe the card that much more. Two things moved, they cancel out, and your net worth didn't budge. Buying on credit doesn't make you poorer. Using the thing does.</p>
+      <div class="tc">0:55 <span>TRAP 2 &middot; PAYING OFF DEBT</span></div>
+      <p class="cue">Point at the credit card payoff row. Let the two numbers cancel visibly.</p>
+      <p class="say">Trap two, and this is the big one. You paid off your credit card. It <em>feels</em> like spending — a chunk of money left your account. But the debt disappeared at the same moment. You're not a dollar worse off than you were a minute before. That isn't an expense. That's just moving money between pockets.</p>
+      <div class="tc">1:15 <span>TRAP 3 &middot; PAYING EARLY</span></div>
+      <p class="cue">Point at the concert tickets row, then at the empty Expenses column beside it.</p>
+      <p class="say">Trap three. You bought concert tickets — but the concert is in December. Right now you're holding something you haven't used yet, so it isn't an expense. It becomes one the night you walk in.</p>
+      <div class="tc">1:30 <span>THE ODD ONE &amp; YOUR ANSWERS</span></div>
+      <p class="cue">Point at the casino row, then at the four boxed answers.</p>
+      <p class="say">One more, quickly. You won money at the casino. Didn't work for it, but you're better off — so it's income. Same logic as the gift card.</p>
+      <p class="say">Those four boxes are your answers. Assets up two thousand two hundred and sixty-one, liabilities actually down, revenue up twenty-seven sixty-six, and expenses only three hundred and eighty. Net result: about two thousand four hundred dollars better off than you were on the first of April. And the equation balances, which is how I know nothing's been dropped.</p>
+      <div class="tc">1:55 <span>CLOSE &middot; SLOW DOWN</span></div>
+      <p class="cue">Just your face.</p>
+      <p class="say">So the thing to hold on to, Eva: what feels like spending often isn't, and what feels like nothing sometimes is. Watch your net worth, and watch your cash. Those two tell you everything.</p>
       <div id="end">&mdash; end of script &mdash; hold still for two seconds before you stop recording &mdash;</div>
     </div>
   </div>
@@ -164,7 +166,7 @@ p.opt::before{
 
 <script>
 (function(){
-  var TARGET = 125;
+  var TARGET = 128;
   var KEY = 'pm.april';
   var track = document.getElementById('track');
   var viewport = document.getElementById('viewport');
